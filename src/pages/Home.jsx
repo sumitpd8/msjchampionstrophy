@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Trophy, Users, Calendar, MapPin, ChevronRight, X, Phone, Clock, Star } from 'lucide-react';
+import { Trophy, Users, Medal, Calendar, MapPin, ChevronRight, X, Phone, Clock, Star, Plus } from 'lucide-react';
 
 const Home = () => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
@@ -10,42 +10,42 @@ const Home = () => {
   const tournamentPhotos = [
     {
       id: 1,
-      url: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'images/Gallary/03.jpg',
       alt: 'Cricket Ground',
       title: 'Tournament Ground',
       description: 'Koyla Veer Baba Stadium - Our prestigious tournament venue'
     },
     {
       id: 2,
-      url: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'images/Gallary/02.jpg',
       alt: 'Team Photo',
       title: 'Participating Teams',
       description: 'Teams gathering for the championship trophy'
     },
     {
       id: 3,
-      url: 'https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Cricket Match',
-      title: 'Live Action',
+      url: 'images/Gallary/01.jpg',
+      alt: 'Cricket Pitch',
+      title: 'ceremonial even(Ribbon cutting)',
       description: 'Intense cricket action during the tournament'
     },
     {
       id: 4,
-      url: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'images/Gallary/04.jpg',
       alt: 'Awards Ceremony',
       title: 'Awards Ceremony',
       description: 'Victory celebration and prize distribution'
     },
     {
       id: 5,
-      url: '/images/ChiefGuest.jpg',
+      url: '/images/Gallary/ChiefGuest.jpg',
       alt: 'Guest Photo',
       title: 'Chief Guests',
       description: 'Distinguished guests at the tournament opening'
     },
     {
       id: 6,
-      url: '/images/VictoryCelebration.jpg',
+      url: '/images/Gallary/VictoryCelebration.jpg',
       alt: 'Team Celebration',
       title: 'Victory Celebration',
       description: 'Champions celebrating their victory'
@@ -73,13 +73,13 @@ const Home = () => {
     endDate: '2026-02-28',
     status: 'upcoming',
     description: 'The biggest cricket tournament of the year is coming back with more excitement and bigger prizes! Register your team now for the most prestigious cricket championship.',
-    features: ['Increased Prize Money', '16 Teams Participation', 'Live Streaming', 'Professional Commentary', 'Digital Scoreboard', 'Player Statistics'],
+    features: ['Increased Prize Money', 'Max 16+ Teams Participate', 'Professional Commentary', 'Digital Scoreboard', 'Player and Team Statistics'],
     registrationDeadline: '2026-01-15',
     venue: 'Koyla Veer Baba Stadium, Ballia',
     prizePool: '₹51,000',
-    registrationFee: '₹1100 per team',
-    maxTeams: 16,
-    categories: ['Open Category', 'Youth Category (Under 23)']
+    registrationFee: '₹5100 per team',
+    runnerUpTeam: '₹21,000',
+    categories: ['Open Category', 'No minimum and maximum age required']
   };
 
   const openPhoto = (photo, index) => {
@@ -201,15 +201,21 @@ const Home = () => {
                         <Trophy className="h-5 w-5 text-yellow-500" />
                         <span className="text-gray-600">Prize Pool: <strong className="text-gray-900">{upcomingTournament.prizePool}</strong></span>
                       </div>
+
                       <div className="flex items-center space-x-3">
                         <Clock className="h-5 w-5 text-blue-600" />
                         <span className="text-gray-600">Registration Fee: <strong className="text-gray-900">{upcomingTournament.registrationFee}</strong></span>
                       </div>
+
                       <div className="flex items-center space-x-3">
-                        <Users className="h-5 w-5 text-green-600" />
-                        <span className="text-gray-600">Max Teams: <strong className="text-gray-900">{upcomingTournament.maxTeams}</strong></span>
+                        <Medal className="h-5 w-5 text-green-600" />
+                        <span className="text-gray-600">Runner up Team: <strong className="text-gray-900">{upcomingTournament.runnerUpTeam}</strong></span>
                       </div>
                       
+
+
+
+
                       <div className="mt-6">
                         <h5 className="font-semibold text-gray-900 mb-3">Categories</h5>
                         <ul className="space-y-2">

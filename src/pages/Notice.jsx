@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, FileText, Calendar, Bell, ExternalLink, Star, Trophy, Clock, MapPin, Users } from 'lucide-react';
+import { Download, FileText, Calendar, Medal, Bell, ExternalLink, Star, Trophy, Clock, MapPin, Users } from 'lucide-react';
 
 const Notice = () => {
   const notices = [
@@ -69,18 +69,20 @@ const Notice = () => {
     endDate: '2026-02-28',
     status: 'upcoming',
     description: 'The biggest cricket tournament of the year is coming back with more excitement and bigger prizes! This is your chance to be part of cricket history.',
-    features: ['Increased Prize Money', '32 Teams Participation', 'Live Streaming', 'Professional Commentary', 'Digital Scoreboard', 'Player Statistics'],
+    features: ['Increased Prize Money', '32 Teams Participation',  'Professional Commentary', 'Digital Scoreboard', 'Player Statistics'],
     registrationDeadline: '2026-01-15',
     venue: 'Koyla Veer Baba Stadium, Ballia',
     prizePool: '₹51,000',
-    registrationFee: '₹1100 per team',
-    maxTeams: 16,
-    categories: ['Open Category', 'Youth Category (Under 23)'],
+    registrationFee: '₹5100 per team',
+    maxTeams: 10,
+    runnerUpTeam: '₹21,000',
+    categories: ['Open Category', 'No minimum and maximum age required'],
     eligibility: [
       'Team must have minimum 11 players and maximum 15 players',
-      'All players must be amateur cricketers',
-      'Age proof required for youth category',
-      'Team captain must be present during registration'
+      'Team name and captain details',
+      'A valid ID proof (Like Aadhar card, Pan Card etc.)',
+      'Contact Information(Like Email, Mobie no. etc.)',
+      'Registration Fee Payment & Confirmation(Mandatory)',
     ]
   };
 
@@ -161,14 +163,17 @@ const Notice = () => {
                         <Trophy className="h-5 w-5 text-yellow-500" />
                         <span className="text-gray-600">Prize Pool: <strong className="text-gray-900">{upcomingTournament.prizePool}</strong></span>
                       </div>
+                      
                       <div className="flex items-center space-x-3">
                         <Clock className="h-5 w-5 text-blue-600" />
                         <span className="text-gray-600">Registration Fee: <strong className="text-gray-900">{upcomingTournament.registrationFee}</strong></span>
                       </div>
+
                       <div className="flex items-center space-x-3">
-                        <Users className="h-5 w-5 text-green-600" />
-                        <span className="text-gray-600">Max Teams: <strong className="text-gray-900">{upcomingTournament.maxTeams}</strong></span>
+                        <Medal className="h-5 w-5 text-green-600" />
+                        <span className="text-gray-600">Runner up Team: <strong className="text-gray-900">{upcomingTournament.runnerUpTeam}</strong></span>
                       </div>
+
                     </div>
                   </div>
                   

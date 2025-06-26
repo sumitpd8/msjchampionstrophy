@@ -9,24 +9,24 @@ const Gallery = () => {
     {
       id: 1,
       type: 'image',
-      url: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=400',
+      url: '/images/Gallary/01.jpg',
+      thumbnail: '/images/Gallary/01.jpg',
       title: 'Tournament Opening Ceremony',
       category: 'ceremony'
     },
     {
       id: 2,
       type: 'image',
-      url: 'https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=400',
+      url: '/images/Gallary/03.jpg',
+      thumbnail: '/images/Gallary/03.jpg',
       title: 'Cricket Ground View',
       category: 'venue'
     },
     {
       id: 3,
       type: 'video',
-      url: 'https://player.vimeo.com/video/123456789',
-      thumbnail: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=400',
+      url: 'https://player.vimeo.com/video/123456791',
+      thumbnail: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=400',
       title: 'Match Highlights - Final',
       category: 'match'
     },
@@ -41,8 +41,8 @@ const Gallery = () => {
     {
       id: 5,
       type: 'image',
-      url: 'https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=400',
+      url:  '/images/Gallary/ChiefGuest.jpg',
+      thumbnail:  '/images/Gallary/ChiefGuest.jpg',
       title: 'Chief Guests Arrival',
       category: 'ceremony'
     },
@@ -65,8 +65,8 @@ const Gallery = () => {
     {
       id: 8,
       type: 'image',
-      url: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=400',
+      url:  '/images/Gallary/VictoryCelebration.jpg',
+      thumbnail:  '/images/Gallary/VictoryCelebration.jpg',
       title: 'Victory Celebration',
       category: 'ceremony'
     },

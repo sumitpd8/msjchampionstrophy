@@ -3,26 +3,32 @@ import { Trophy, Heart, Target, Users } from 'lucide-react';
 
 const About = () => {
   const organizers = [
-    { name: 'Yogendra Prasad Verma',  img: '/images/YogendraPrasadVerma.jpg' },
-    { name: 'Jaishankar Prasad Bhagat Ji',  img: '/images/JaishankarPrasadBhagatJi.jpg' },
-    { name: 'Rakesh Gond',  img: '/images/RakeshGond.jpg'  },
-    { name: 'Vivek Yadav',  img: '/images/VivekYadav.jpg'  },
-    { name: 'Mandhata Ojha',  img: '/images/MandhataOjha.jpg'  },
-    { name: 'Ritesh Yadav',  img: '/images/RiteshYadav.jpg'  },
-    { name: 'Sumit Verma',  img: '/images/SumitVerma.jpg'  },
-    { name: 'Vindhyachal Gupta',  img: '/images/VindhyachalGupta.jpg'  },
-    { name: 'Laxman Sharma Ji',  img: '/images/LaxmanSharmaJi.jpg'  }
+    { name: 'Yogendra Prasad Verma',  img: '/images/MainOrganizers/YogendraPrasadVerma.jpg' },
+    { name: 'Jaishankar Prasad Bhagat Ji',  img: '/images/MainOrganizers/JaishankarPrasadBhagatJi.jpg' },
+    { name: 'Rakesh Gond',  img: '/images/MainOrganizers/RakeshGond.jpg'  },
+    { name: 'Vivek Yadav',  img: '/images//MainOrganizers/VivekYadav.jpg'  },
+    { name: 'Mandhata Ojha',  img: '/images/MainOrganizers/MandhataOjha.jpg'  },
+    { name: 'Ritesh Yadav',  img: '/images/MainOrganizers/RiteshYadav.jpg'  },
+    { name: 'Sumit Verma',  img: '/images/MainOrganizers/SumitVerma.jpg'  },
+    { name: 'Vindhyachal Gupta',  img: '/images/MainOrganizers/VindhyachalGupta.jpg'  },
+    { name: 'Laxman Sharma Ji',  img: '/images/MainOrganizers/LaxmanSharmaJi.jpg'  }
   ];
 
   const committeeMembers = [
-    { name: 'Sudhir Gond', role: 'President', photo: '/images/sudhirgond.jpg' },
-    { name: 'Arun Yadav', role: 'Vice President', photo: '/images/ArunYadav.jpg' },
-    { name: 'Appu Yadav', role: 'Vice President', photo: '/images/AppuYadav.jpg' },
-    { name: 'Shakti Singh Yadav', role: 'Treasurer', photo: '/images/ShaktiSinghYadav.jpg'},
-    { name: 'Ranjan Verma', role: 'Treasurer', photo: '/images/RanjanVerma.jpg' },
-    { name: 'Yashvendra Pratap Singh', role: 'Secretary', photo: '/images/YashvendraPratapSingh.jpg' },
-    { name: 'Golu Gond (Bagha)', role: 'General Secretary', photo: '/images/GoluGond.jpg' },
-    { name: 'Sumit Prasad', role: 'Technical Support', photo: '/images/SumitPrasad.jpg' },
+    { name: 'Sudhir Gond', role: 'President', photo: '/images/OrganizingCommitteeMembers/sudhirgond.jpg' },
+    { name: 'Arun Yadav', role: 'Vice President', photo: '/images/OrganizingCommitteeMembers/ArunYadav.jpg' },
+    { name: 'Appu Yadav', role: 'Vice President', photo: '/images/OrganizingCommitteeMembers/AppuYadav.jpg' },
+    { name: 'Shakti Singh Yadav', role: 'Treasurer', photo: '/images/OrganizingCommitteeMembers/ShaktiSinghYadav.jpg'},
+    { name: 'Ranjan Verma', role: 'Treasurer', photo: '/images/OrganizingCommitteeMembers/RanjanVerma.jpg' },
+    { name: 'Yashvendra Pratap Singh', role: 'Secretary', photo: '/images/OrganizingCommitteeMembers/YashvendraPratapSingh.jpg' },
+    { name: 'Golu Gond (Bagha)', role: 'General Secretary', photo: '/images/OrganizingCommitteeMembers/GoluGond.jpg' },
+    
+  ];
+
+   const technicalSupport = [
+    { name: 'Sumit Prasad', role: 'Developer', photo: '/images/technicalSupport/SumitPrasad.jpg' },
+    { name: 'Akash Kumar Sinha',  role: 'Developer',photo: '/images/technicalSupport/AkashKumarSinha.jpg' },
+    { name: 'Sohom Roy', role: 'Developer', photo: '/images/technicalSupport/SohomRoy.jpg' },
   ];
 
   const objectives = [
@@ -133,23 +139,52 @@ const About = () => {
 
         {/* Organizing Committee */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Organizing Committee Members</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {committeeMembers.map((member, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <div className="w-24 h-24 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{member.name}</h3>
-                <p className="text-sm text-gray-600">{member.role}</p>
-              </div>
-            ))}
-          </div>
+  <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+    Organizing Committee Members
+  </h2>
+  <div className="flex flex-wrap justify-center gap-4">
+    {committeeMembers.map((member, index) => (
+      <div
+        key={index}
+        className="bg-white p-6 rounded-lg shadow-lg text-center w-full sm:w-1/2 lg:w-1/5"
+      >
+        <div className="w-24 h-24 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+          <img
+            src={member.photo}
+            alt={member.name}
+            className="w-full h-full object-cover"
+          />
         </div>
+        <h3 className="font-semibold text-gray-900 mb-2">{member.name}</h3>
+        <p className="text-sm text-gray-600">{member.role}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+        {/* Technical Support */}
+        <div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Technical Support</h2>
+  <div className="flex flex-wrap justify-center gap-4">
+    {technicalSupport.map((member, index) => (
+      <div
+        key={index}
+        className="bg-white p-6 rounded-lg shadow-lg text-center w-full sm:w-1/2 lg:w-1/5"
+      >
+        <div className="w-24 h-24 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+          <img
+            src={member.photo}
+            alt={member.name}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h3 className="font-semibold text-gray-900 mb-2">{member.name}</h3>
+        <p className="text-sm text-gray-600">{member.role}</p>
+      </div>
+    ))}
+  </div>
+</div>
 
         {/* Venue Information */}
         <div className="bg-gradient-to-r from-blue-600 to-pink-600 text-white rounded-lg p-8">
