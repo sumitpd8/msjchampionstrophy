@@ -22,7 +22,7 @@ const About = () => {
     { name: 'Ranjan Verma', role: 'Treasurer', photo: '/images/RanjanVerma.jpg' },
     { name: 'Yashvendra Pratap Singh', role: 'Secretary', photo: '/images/YashvendraPratapSingh.jpg' },
     { name: 'Golu Gond (Bagha)', role: 'General Secretary', photo: '/images/GoluGond.jpg' },
-    { name: 'Sumit Prasad', role: 'Technical Support', photo: '/images/SumitPrasad.jpg' },
+    { name: 'Kalu Prasad', role: 'Technical Support', photo: '/images/SumitPrasad.jpg' },
   ];
 
   const objectives = [
