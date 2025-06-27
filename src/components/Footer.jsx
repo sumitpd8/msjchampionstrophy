@@ -28,6 +28,31 @@ const Footer = () => {
             </div>
           </div>
 
+
+          {/* Techanical Support */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-white-400">Contact For Techanical services</h3>
+            <h3 className="text-sm mb-0 text-white-400">Services Like Building Scalable & Responsive Web Applications, Apps, AI Automation</h3>
+            <h4 className="text-lg font-semibold mb-3 text-black-200">[Team Rocket]</h4>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-5 w-5 text-black-400" />
+                <p className="text-sm">Kolkata, West Bengal</p>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-black-400" />
+                <div className="text-sm">
+                  <p>Sumit Prasad: 9519415846</p>
+                  <p>Akash Kumar Sinha: 6205474903</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Clock className="h-5 w-5 text-white-400" />
+                <p className="text-sm">10:00 AM to 07:00 PM</p>
+              </div>
+            </div>
+          </div>
+
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-black-400">Quick Links</h3>
@@ -37,6 +62,7 @@ const Footer = () => {
               <li><a href="/contact" className="text-sm hover:text-blue-400 transition-colors">Register Team</a></li>
               <li><a href="/notice" className="text-sm hover:text-blue-400 transition-colors">Notice Board</a></li>
               <li><a href="/gallery" className="text-sm hover:text-blue-400 transition-colors">Gallery</a></li>
+              <li><a href="/sponsorship" className="text-sm hover:text-blue-400 transition-colors">Sponsorship</a></li>
             </ul>
           </div>
 

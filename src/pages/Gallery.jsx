@@ -33,10 +33,10 @@ const Gallery = () => {
     {
       id: 4,
       type: 'image',
-      url: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=400',
-      title: 'Team Photo Session',
-      category: 'teams'
+      url: '/images/Gallary/06.jpg',
+      thumbnail: '/images/Gallary/06.jpg',
+      title: 'Prize',
+      category: 'Player'
     },
     {
       id: 5,
@@ -57,10 +57,10 @@ const Gallery = () => {
     {
       id: 7,
       type: 'image',
-      url: 'https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=400',
-      title: 'Stadium Facilities',
-      category: 'venue'
+      url: '/images/Gallary/08.jpg',
+      thumbnail: '/images/Gallary/08.jpg',
+      // title: '',
+      // category: ''
     },
     {
       id: 8,
@@ -81,26 +81,26 @@ const Gallery = () => {
     {
       id: 10,
       type: 'image',
-      url: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=400',
+      url: '/images/Gallary/09.jpg',
+      thumbnail: '/images/Gallary/09.jpg',
       title: 'Player Action Shot',
       category: 'match'
     },
     {
       id: 11,
       type: 'image',
-      url: 'https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=400',
-      title: 'Crowd Cheering',
-      category: 'crowd'
+      url: '/images/Gallary/11.jpg',
+      thumbnail: '/images/Gallary/11.jpg',
+      // title: 'Crowd Cheering',
+      // category: 'crowd'
     },
     {
       id: 12,
       type: 'image',
-      url: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=800',
-      thumbnail: 'https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=400',
-      title: 'Award Ceremony',
-      category: 'ceremony'
+      url: '/images/Gallary/12.jpg',
+      thumbnail: '/images/Gallary/12.jpg',
+      // title: 'Award Ceremony',
+      // category: 'ceremony'
     }
   ];
 

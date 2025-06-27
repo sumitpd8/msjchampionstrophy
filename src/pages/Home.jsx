@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Trophy, Users, Medal, Calendar, MapPin, ChevronRight, X, Phone, Clock, Star, Plus } from 'lucide-react';
+import { Trophy, Users, Medal, Calendar, MapPin, ChevronRight, X, Phone, Clock, Star, Plus, ArrowRight } from 'lucide-react';
 
 const Home = () => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
@@ -115,9 +115,17 @@ const Home = () => {
   };
 
   return (
+
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-800 via-indigo-700 to-blue-900 text-white py-20">
+        {/* Stadium Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
+          style={{ backgroundImage: `url(/images/Gallary/05.png)` }}>
+
+          </div>
+        
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Trophy className="h-16 w-16 mx-auto mb-6 text-yellow-400" />
@@ -211,11 +219,6 @@ const Home = () => {
                         <Medal className="h-5 w-5 text-green-600" />
                         <span className="text-gray-600">Runner up Team: <strong className="text-gray-900">{upcomingTournament.runnerUpTeam}</strong></span>
                       </div>
-                      
-
-
-
-
                       <div className="mt-6">
                         <h5 className="font-semibold text-gray-900 mb-3">Categories</h5>
                         <ul className="space-y-2">
@@ -260,6 +263,41 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Sponsorship Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800">
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          
+          <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-4 rounded-full shadow-2xl w-fit mx-auto mb-6">
+            <Star className="h-12 w-12 text-white" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Become Our Sponsor
+          </h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            Join us in promoting rural cricket talent. Partner with MSJ Champions Trophy 2026 
+            and be part of this prestigious tournament.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+            <Link
+              to="/sponsorship"
+              className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold text-xl rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+            >
+              <Star className="h-6 w-6 mr-3" />
+              Sponsor Now
+              <ArrowRight className="ml-3 h-6 w-6" />
+            </Link>
+            <a
+              href="tel:+919120186401"
+              className="inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold rounded-full text-lg border-2 border-white/30 hover:border-white/50 transition-all duration-300"
+            >
+              <Phone className="h-5 w-5 mr-2" />
+              Call: 9120186401
+            </a>
+          </div>
+        </div>
+      </section>
+      
       {/* Stats Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -295,9 +333,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-      
 
       {/* Tournament Photos Section with Enhanced Viewer */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
@@ -394,7 +429,8 @@ const Home = () => {
           </div>
         </div>
       )}
-
+      
+      
       {/* Quick Contact Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -455,7 +491,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/Gallary/05.png"
                 alt="Cricket Stadium"
                 className="rounded-lg shadow-xl w-full h-80 object-cover border-2 border-blue-200"
               />

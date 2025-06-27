@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Notice from './pages/Notice';
 import Gallery from './pages/Gallery';
+import Sponsorship from './pages/Sponsorship';
 
 // Component to scroll to top on route change
 function ScrollToTop() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/notice" element={<Notice />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/sponsorship" element={<Sponsorship />} /> 
           </Routes>
         </main>
         <Footer />
