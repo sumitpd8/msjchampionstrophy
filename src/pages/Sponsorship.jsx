@@ -254,7 +254,7 @@ const Sponsorship = () => {
               <Mail className="h-12 w-12 text-yellow-300 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">Email Us</h3>
               <a href="mailto:msjchampionstrophy@email.com" className="text-blue-100 hover:text-white transition-colors">
-                msjchampionstrophy@gmmail.com
+                msjchampionstrophy@gmail.com
               </a>
             </div>
 
