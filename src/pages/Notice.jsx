@@ -71,7 +71,7 @@ const Notice = () => {
     description: 'The biggest cricket tournament of the year is coming back with more excitement and bigger prizes! This is your chance to be part of cricket history.',
     features: ['Increased Prize Money', '32 Teams Participation',  'Professional Commentary', 'Digital Scoreboard', 'Player Statistics'],
     registrationDeadline: '2026-01-15',
-    venue: 'Koyla Veer Baba Stadium, Ballia',
+    venue: 'Koyla Veer Baba Cricket Ground, Ballia',
     prizePool: '₹51,000',
     registrationFee: '₹5100 per team',
     maxTeams: 10,

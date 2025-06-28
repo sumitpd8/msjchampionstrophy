@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Notice from './pages/Notice';
-import Gallery from './pages/Gallery';
-import Sponsorship from './pages/Sponsorship';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import Notice from './pages/Notice.jsx';
+import Gallery from './pages/Gallery.jsx';
+import Sponsorship from './pages/Sponsorship.jsx';
+import Matches from './pages/Matches.jsx';
+import Teams from './pages/Teams.jsx';
 
 // Component to scroll to top on route change
 function ScrollToTop() {
@@ -34,6 +36,8 @@ function App() {
             <Route path="/notice" element={<Notice />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/sponsorship" element={<Sponsorship />} /> 
+            <Route path="/matches" element={<Matches />} />
+            <Route path="/teams" element={<Teams />} />
           </Routes>
         </main>
         <Footer />

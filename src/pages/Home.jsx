@@ -82,6 +82,103 @@ const Home = () => {
     categories: ['Open Category', 'No minimum and maximum age required']
   };
 
+   // Cricket scoreboard data with custom team logos
+  const upcomingMatches = [
+    {
+      id: 1,
+      team1: { 
+        name: 'Thunder Bolts', 
+        logo: '/images/teams/thunder-bolts.png', // Your custom logo here
+        fallbackLogo: '⚡', 
+        score: '0/0' 
+      },
+      team2: { 
+        name: 'Fire Eagles', 
+        logo: '/images/teams/fire-eagles.jpg', // Your custom logo here
+        fallbackLogo: '🔥', 
+        score: '0/0' 
+      },
+      date: '2026-01-15',
+      time: '10:00 AM',
+      status: 'Upcoming'
+    },
+    {
+      id: 2,
+      team1: { 
+        name: 'Storm Riders', 
+        logo: '/images/teams/storm-riders.png', // Your custom logo here
+        fallbackLogo: '🌪️', 
+        score: '0/0' 
+      },
+      team2: { 
+        name: 'Royal Kings', 
+        logo: '/images/teams/royal-kings.jpg', // Your custom logo here
+        fallbackLogo: '👑', 
+        score: '0/0' 
+      },
+      date: '2026-01-16',
+      time: '2:00 PM',
+      status: 'Upcoming'
+    },
+    // {
+    //   id: 3,
+    //   team1: { 
+    //     name: 'Lightning Warriors', 
+    //     logo: '/images/teams/lightning-warriors.png', // Your custom logo here
+    //     fallbackLogo: '⚔️', 
+    //     score: '0/0' 
+    //   },
+    //   team2: { 
+    //     name: 'Golden Panthers', 
+    //     logo: '/images/teams/golden-panthers.jpg', // Your custom logo here
+    //     fallbackLogo: '🐆', 
+    //     score: '0/0' 
+    //   },
+    //   date: '2026-01-17',
+    //   time: '10:00 AM',
+    //   status: 'Upcoming'
+    // },
+    // {
+    //   id: 4,
+    //   team1: { 
+    //     name: 'Blue Sharks', 
+    //     logo: '/images/teams/blue-sharks.png', // Your custom logo here
+    //     fallbackLogo: '🦈', 
+    //     score: '0/0' 
+    //   },
+    //   team2: { 
+    //     name: 'Red Dragons', 
+    //     logo: '/images/teams/red-dragons.jpg', // Your custom logo here
+    //     fallbackLogo: '🐉', 
+    //     score: '0/0' 
+    //   },
+    //   date: '2026-01-18',
+    //   time: '2:00 PM',
+    //   status: 'Upcoming'
+    // }
+  ];
+
+  // Team logo component with fallback for custom images
+  const TeamLogo = ({ team, size = 'w-16 h-16' }) => {
+    const [imageError, setImageError] = useState(false);
+    
+    return (
+      <div className={`${size} rounded-full bg-gradient-to-r from-blue-100 to-blue-200 flex items-center justify-center border-2 border-blue-300 shadow-lg overflow-hidden`}>
+        {!imageError ? (
+          <img
+            src={team.logo}
+            alt={`${team.name} logo`}
+            className={`${size} rounded-full object-cover`}
+            onError={() => setImageError(true)}
+          />
+        ) : (
+          <span className="text-2xl">{team.fallbackLogo}</span>
+        )}
+      </div>
+    );
+  };
+
+
   const openPhoto = (photo, index) => {
     setSelectedPhoto(photo);
     setCurrentImageIndex(index);
@@ -151,8 +248,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
-
+      </section>      
       {/* Upcoming Tournament 2026 Section */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -262,6 +358,63 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Cricket Scoreboard Section with Custom Team Logos */}
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">🏏 Upcoming Matches</h2>
+            <p className="text-xl text-blue-100">Get ready for exciting cricket action with your favorite teams!</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {upcomingMatches.map((match) => (
+              <div key={match.id} className="bg-white rounded-2xl shadow-2xl p-6 hover:scale-105 transition-all duration-300">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="text-center flex-1">
+                    <TeamLogo team={match.team1} size="w-20 h-20" />
+                    <h3 className="font-bold text-blue-800 text-lg mt-3">{match.team1.name}</h3>
+                    <p className="text-2xl font-bold text-blue-600">{match.team1.score}</p>
+                  </div>
+                  
+                  <div className="text-center px-4">
+                    <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-bold py-2 px-4 rounded-full text-sm">
+                      VS
+                    </div>
+                    <p className="text-blue-600 font-semibold mt-2">{match.date}</p>
+                    <p className="text-blue-500 text-sm">{match.time}</p>
+                  </div>
+                  
+                  <div className="text-center flex-1">
+                    <TeamLogo team={match.team2} size="w-20 h-20" />
+                    <h3 className="font-bold text-blue-800 text-lg mt-3">{match.team2.name}</h3>
+                    <p className="text-2xl font-bold text-blue-600">{match.team2.score}</p>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <span className="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                    {match.status}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* View All Matches Button */}
+          <div className="text-center mt-12">
+            <Link
+              to="/matches"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold rounded-full transition-all duration-300 hover:shadow-xl hover:scale-105"
+            >
+              <Trophy className="h-5 w-5 mr-2" />
+              View All Matches
+              <ArrowRight className="ml-3 h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
 
       {/* Sponsorship Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800">
@@ -478,7 +631,7 @@ const Home = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg text-gray-900">Koyla Veer Baba Stadium</h3>
+                    <h3 className="font-semibold text-lg text-gray-900">Koyla Veer Baba Cricket Ground</h3>
                     <p className="text-gray-600">Durjanpur (Nai Basti), Ballia (Uttar Pradesh)</p>
                   </div>
                 </div>
@@ -531,11 +684,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      
-
-      
+      </section>      
     </div>
   );
 };

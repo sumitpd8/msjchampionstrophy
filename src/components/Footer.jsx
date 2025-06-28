@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-black-400" />
-                <p className="text-sm">Koyla Veer Baba Stadium, Durjanpur (Nai Basti), Ballia, Uttar Pradesh.</p>
+                <p className="text-sm">Koyla Veer Baba Cricket Ground, Durjanpur (Nai Basti), Ballia, Uttar Pradesh.</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-black-400" />

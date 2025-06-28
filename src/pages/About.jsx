@@ -191,7 +191,7 @@ const About = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">Tournament Venue</h2>
             <div className="max-w-2xl mx-auto">
-              <h3 className="text-2xl font-semibold mb-4">Koyla Veer Baba Stadium</h3>
+              <h3 className="text-2xl font-semibold mb-4">Koyla Veer Baba Cricket Ground</h3>
               <p className="text-lg mb-4">Durjanpur (Nai Basti), Ballia (Uttar Pradesh)</p>
               <p className="text-lg">
                 This venue is not only a hub for local sports enthusiasts but also symbolizes 

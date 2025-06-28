@@ -82,6 +82,10 @@ const Sponsorship = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-16 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+          style={{ backgroundImage: `url(/images/Gallary/17.jpg)` }}>
+          </div>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 border-4 border-white rounded-full"></div>
           <div className="absolute top-32 right-20 w-24 h-24 border-4 border-yellow-400 rounded-full"></div>
@@ -263,7 +267,7 @@ const Sponsorship = () => {
               <MapPin className="h-12 w-12 text-yellow-300 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">Visit Us</h3>
               <div className="text-blue-100">
-                <p>Koyla Veer Baba Stadium</p>
+                <p>Koyla Veer Baba Cricket Ground</p>
                 <p>Durjanpur (Nai Basti)</p>
                 <p>Ballia, Uttar Pradesh</p>
               </div>
