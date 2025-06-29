@@ -69,15 +69,17 @@ const Home = () => {
   const upcomingTournament = {
     id: 1,
     title: 'MSJ Champions Trophy 2026',
-    date: '2026-02-15',
-    endDate: '2026-02-28',
+    date: '',
+    endDate: '',
     status: 'upcoming',
     description: 'The biggest cricket tournament of the year is coming back with more excitement and bigger prizes! Register your team now for the most prestigious cricket championship.',
     features: ['Increased Prize Money', 'Max 16+ Teams Participate', 'Professional Commentary', 'Digital Scoreboard', 'Player and Team Statistics'],
-    registrationDeadline: '2026-01-15',
+
+    // registrationDeadline: '2026-01-15',
+    
     venue: 'Koyla Veer Baba Stadium, Ballia',
-    prizePool: '₹51,000',
     registrationFee: '₹5100 per team',
+    prizePool: '₹51,000',
     runnerUpTeam: '₹21,000',
     categories: ['Open Category', 'No minimum and maximum age required']
   };
@@ -98,8 +100,10 @@ const Home = () => {
         fallbackLogo: '🔥', 
         score: '0/0' 
       },
-      date: '2026-01-15',
-      time: '10:00 AM',
+
+      // date: '2026-01-15',
+      // time: '10:00 AM',
+
       status: 'Upcoming'
     },
     {
@@ -116,8 +120,10 @@ const Home = () => {
         fallbackLogo: '👑', 
         score: '0/0' 
       },
-      date: '2026-01-16',
-      time: '2:00 PM',
+
+      // date: '2026-01-16',
+      // time: '2:00 PM',
+
       status: 'Upcoming'
     },
     // {
@@ -157,7 +163,6 @@ const Home = () => {
     //   status: 'Upcoming'
     // }
   ];
-
   // Team logo component with fallback for custom images
   const TeamLogo = ({ team, size = 'w-16 h-16' }) => {
     const [imageError, setImageError] = useState(false);
@@ -215,14 +220,12 @@ const Home = () => {
 
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-800 via-indigo-700 to-blue-900 text-white py-20">
+      <section className="relative bg-gradient-to-r from-blue via-indigo to-blue text-white py-20">
         {/* Stadium Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-900"
           style={{ backgroundImage: `url(/images/Gallary/05.png)` }}>
-
-          </div>
-        
+        </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Trophy className="h-16 w-16 mx-auto mb-6 text-yellow-400" />
@@ -248,7 +251,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>      
+      </section>    
+        
       {/* Upcoming Tournament 2026 Section */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -273,10 +277,14 @@ const Home = () => {
                 </div>
                 <p className="text-blue-100 mb-6 text-lg">{upcomingTournament.description}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-                  <div className="flex items-center space-x-3">
+
+
+                  {/* <div className="flex items-center space-x-3">
                     <Calendar className="h-5 w-5" />
                     <span className="text-lg">{formatDate(upcomingTournament.date)} - {formatDate(upcomingTournament.endDate)}</span>
-                  </div>
+                  </div> */}
+
+
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5" />
                     <span className="text-lg">{upcomingTournament.venue}</span>
@@ -302,13 +310,13 @@ const Home = () => {
                     <h4 className="font-semibold text-gray-900 mb-4 text-xl">Tournament Details</h4>
                     <div className="space-y-4">
                       <div className="flex items-center space-x-3">
-                        <Trophy className="h-5 w-5 text-yellow-500" />
-                        <span className="text-gray-600">Prize Pool: <strong className="text-gray-900">{upcomingTournament.prizePool}</strong></span>
+                      <Clock className="h-5 w-5 text-blue-600" />
+                        <span className="text-gray-600">Registration Fee: <strong className="text-gray-900">{upcomingTournament.registrationFee}</strong></span>
                       </div>
 
                       <div className="flex items-center space-x-3">
-                        <Clock className="h-5 w-5 text-blue-600" />
-                        <span className="text-gray-600">Registration Fee: <strong className="text-gray-900">{upcomingTournament.registrationFee}</strong></span>
+                        <Trophy className="h-5 w-5 text-yellow-500" />
+                        <span className="text-gray-600">Prize Pool: <strong className="text-gray-900">{upcomingTournament.prizePool}</strong></span>
                       </div>
 
                       <div className="flex items-center space-x-3">

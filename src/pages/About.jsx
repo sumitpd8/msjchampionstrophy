@@ -25,11 +25,11 @@ const About = () => {
     
   ];
 
-   const technicalSupport = [
-    { name: 'Sumit Prasad', role: 'Developer', photo: '/images/technicalSupport/SumitPrasad.jpg' },
-    { name: 'Akash Kumar Sinha',  role: 'Developer',photo: '/images/technicalSupport/AkashKumarSinha.jpg' },
-    { name: 'Sohom Roy', role: 'Developer', photo: '/images/technicalSupport/SohomRoy.jpg' },
-  ];
+  //  const technicalSupport = [
+  //   { name: 'Sumit Prasad', role: 'Developer', photo: '/images/technicalSupport/SumitPrasad.jpg' },
+  //   { name: 'Akash Kumar Sinha',  role: 'Developer',photo: '/images/technicalSupport/AkashKumarSinha.jpg' },
+  //   { name: 'Sohom Roy', role: 'Developer', photo: '/images/technicalSupport/SohomRoy.jpg' },
+  // ];
 
   const objectives = [
     {
@@ -163,7 +163,7 @@ const About = () => {
 </div>
 
 
-        {/* Technical Support */}
+        {/* Technical Support
         <div className="mb-16">
   <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Technical Support</h2>
   <div className="flex flex-wrap justify-center gap-4">
@@ -184,7 +184,7 @@ const About = () => {
       </div>
     ))}
   </div>
-</div>
+</div> */}
 
         {/* Venue Information */}
         <div className="bg-gradient-to-r from-blue-600 to-pink-600 text-white rounded-lg p-8">

@@ -11,12 +11,12 @@ import { Star, Trophy, Users, Target, Phone, Mail, MapPin, ExternalLink, Award, 
  */
 const Sponsorship = () => {
   // Google Form URL for sponsorship registration
-  const sponsorshipFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe98E-eDz70SSHFGVVEwAzbNL4DvqTecgk2Pl2SG_FPuTu9rQ/viewform?usp=header";
+  const sponsorshipFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfbBq8ToIhXsAbm0T8fF6UzNAHJq1xNQkK1BrhcLvDo_5oHSA/viewform?usp=header";
 
   const sponsorshipPackages = [
     {
       name: 'Title Sponsor',
-      price: '₹2,00,000',
+      price: '₹50,000',
       color: 'from-yellow-500 to-yellow-600',
       benefits: [
         'Tournament named after your brand',
@@ -29,7 +29,7 @@ const Sponsorship = () => {
     },
     {
       name: 'Presenting Sponsor',
-      price: '₹1,00,000',
+      price: '₹35,000',
       color: 'from-blue-600 to-blue-700',
       benefits: [
         'Co-branding with tournament',
@@ -42,7 +42,7 @@ const Sponsorship = () => {
     },
     {
       name: 'Associate Sponsor',
-      price: '₹50,000',
+      price: '₹45,000',
       color: 'from-blue-500 to-blue-600',
       benefits: [
         'Logo on promotional materials',

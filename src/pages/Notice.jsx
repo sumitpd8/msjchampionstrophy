@@ -6,7 +6,9 @@ const Notice = () => {
     {
       id: 1,
       title: 'Tournament Rules and Regulations 2026',
-      date: '2024-01-15',
+      
+      // date: '2024-01-15',
+      
       description: 'Complete set of rules and regulations for the MSJ Champions Trophy 2026.',
       downloadUrl: 'https://drive.google.com/file/d/1QgaJgiJoC1Y_98BAmlcnspnLEYSIXi5P/view?usp=sharing',
       size: '2.5 MB'
@@ -14,7 +16,9 @@ const Notice = () => {
     {
       id: 2,
       title: 'Player Registration Guidelines',
-      date: '2024-01-10',
+
+      // date: '2024-01-10',
+
       description: 'Detailed guidelines for player registration, eligibility criteria, and required documents.',
       downloadUrl: 'https://drive.google.com/file/d/1QgaJgiJoC1Y_98BAmlcnspnLEYSIXi5P/view?usp=sharing',
       size: '1.8 MB'
@@ -22,7 +26,9 @@ const Notice = () => {
     {
       id: 3,
       title: 'Tournament Schedule 2026',
-      date: '2024-01-05',
+
+      // date: '2024-01-05',
+
       description: 'Complete tournament schedule with match timings, venues, and team fixtures.',
       downloadUrl: 'https://drive.google.com/file/d/1QgaJgiJoC1Y_98BAmlcnspnLEYSIXi5P/view?usp=sharing',
       size: '1.2 MB'
@@ -41,22 +47,31 @@ const Notice = () => {
     {
       id: 1,
       title: 'Registration Extended',
-      date: '2024-01-20',
-      message: 'Team registration deadline has been extended to January 30, 2026.',
+
+      // date: '2024-01-20',
+      
+      message: 'Notified Soon',
+      // message: 'Team registration deadline has been extended to January 30, 2026.',
       type: 'important'
     },
     {
       id: 2,
       title: 'Venue Inspection',
-      date: '2024-01-18',
-      message: 'Ground inspection scheduled for January 25, 2026. All team captains invited.',
+
+      // date: '2024-01-18',
+
+      message: 'Notified Soon',
+      // message: 'Ground inspection scheduled for January 25, 2026. All team captains invited.',
       type: 'info'
     },
     {
       id: 3,
       title: 'Prize Distribution',
-      date: '2024-01-16',
-      message: 'Prize money details and distribution ceremony information updated for 2026 tournament.',
+
+      // date: '2024-01-16',
+
+      message: 'Notified Soon',
+      // message: 'Prize money details and distribution ceremony information updated for 2026 tournament.',
       type: 'success'
     }
   ];
@@ -65,16 +80,22 @@ const Notice = () => {
   const upcomingTournament = {
     id: 1,
     title: 'MSJ Champions Trophy 2026',
-    date: '2026-02-15',
-    endDate: '2026-02-28',
+
+    // date: '2026-02-15',
+    // endDate: '2026-02-28',
+
     status: 'upcoming',
     description: 'The biggest cricket tournament of the year is coming back with more excitement and bigger prizes! This is your chance to be part of cricket history.',
     features: ['Increased Prize Money', '32 Teams Participation',  'Professional Commentary', 'Digital Scoreboard', 'Player Statistics'],
-    registrationDeadline: '2026-01-15',
+    
+    // registrationDeadline: '2026-01-15',
+    
     venue: 'Koyla Veer Baba Cricket Ground, Ballia',
-    prizePool: '₹51,000',
     registrationFee: '₹5100 per team',
-    maxTeams: 10,
+    prizePool: '₹51,000',
+
+    // maxTeams: 10,
+
     runnerUpTeam: '₹21,000',
     categories: ['Open Category', 'No minimum and maximum age required'],
     eligibility: [
@@ -143,10 +164,13 @@ const Notice = () => {
                 </div>
                 <p className="text-blue-100 mb-6 text-lg">{upcomingTournament.description}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="flex items-center space-x-3">
+
+                  {/* <div className="flex items-center space-x-3">
                     <Calendar className="h-5 w-5" />
                     <span className="text-lg">{formatDate(upcomingTournament.date)} - {formatDate(upcomingTournament.endDate)}</span>
-                  </div>
+                  </div> */}
+
+
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5" />
                     <span className="text-lg">{upcomingTournament.venue}</span>
@@ -159,16 +183,17 @@ const Notice = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-4 text-xl">Tournament Details</h4>
                     <div className="space-y-4">
-                      <div className="flex items-center space-x-3">
-                        <Trophy className="h-5 w-5 text-yellow-500" />
-                        <span className="text-gray-600">Prize Pool: <strong className="text-gray-900">{upcomingTournament.prizePool}</strong></span>
-                      </div>
                       
                       <div className="flex items-center space-x-3">
                         <Clock className="h-5 w-5 text-blue-600" />
                         <span className="text-gray-600">Registration Fee: <strong className="text-gray-900">{upcomingTournament.registrationFee}</strong></span>
                       </div>
 
+                      <div className="flex items-center space-x-3">
+                        <Trophy className="h-5 w-5 text-yellow-500" />
+                        <span className="text-gray-600">Prize Pool: <strong className="text-gray-900">{upcomingTournament.prizePool}</strong></span>
+                      </div>
+          
                       <div className="flex items-center space-x-3">
                         <Medal className="h-5 w-5 text-green-600" />
                         <span className="text-gray-600">Runner up Team: <strong className="text-gray-900">{upcomingTournament.runnerUpTeam}</strong></span>
