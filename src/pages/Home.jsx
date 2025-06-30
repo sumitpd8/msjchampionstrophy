@@ -375,15 +375,27 @@ const Home = () => {
             <p className="text-xl text-blue-100">Get ready for exciting cricket action with your favorite teams!</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {upcomingMatches.map((match) => (
               <div key={match.id} className="bg-white rounded-2xl shadow-2xl p-6 hover:scale-105 transition-all duration-300">
                 <div className="flex items-center justify-between mb-4">
                   <div className="text-center flex-1">
                     <TeamLogo team={match.team1} size="w-20 h-20" />
-                    <h3 className="font-bold text-blue-800 text-lg mt-3">{match.team1.name}</h3>
+                    <h3 className="font-bold text-blue-800 text-lg mb-2">{match.team1.name}</h3>
                     <p className="text-2xl font-bold text-blue-600">{match.team1.score}</p>
-                  </div>
+                  </div> */}
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {upcomingMatches.map((match) => (
+                <div key={match.id} className="bg-white rounded-2xl shadow-2xl p-6 hover:scale-105 transition-all duration-300">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="text-center flex-1">
+                      <div className="flex justify-center mb-3">
+                        <TeamLogo team={match.team1} size="w-20 h-20" />
+                      </div>
+                    <h3 className="font-bold text-blue-800 text-lg mb-2">{match.team1.name}</h3>
+                    <p className="text-2xl font-bold text-blue-600">{match.team1.score}</p>
+                  </div>    
                   
                   <div className="text-center px-4">
                     <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-bold py-2 px-4 rounded-full text-sm">
@@ -394,7 +406,11 @@ const Home = () => {
                   </div>
                   
                   <div className="text-center flex-1">
-                    <TeamLogo team={match.team2} size="w-20 h-20" />
+                    
+                    <div className="flex justify-center mb-3">
+                      <TeamLogo team={match.team2} size="w-20 h-20" />
+                    </div>
+
                     <h3 className="font-bold text-blue-800 text-lg mt-3">{match.team2.name}</h3>
                     <p className="text-2xl font-bold text-blue-600">{match.team2.score}</p>
                   </div>
