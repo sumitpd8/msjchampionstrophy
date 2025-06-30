@@ -378,7 +378,7 @@ const Matches = () => {
       {/* Matches List */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6">
+          <div className="space-y-2">
             {filteredMatches.map((match) => (
               <div key={match.id} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-blue-100">
                 {/* Match Header */}
@@ -395,10 +395,21 @@ const Matches = () => {
                   {/* Teams Display */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
                     {/* Team 1 */}
-                    <div className="text-center">
+                    {/* <div className="text-center">
                       <TeamLogo team={match.team1} size="w-20 h-20 md:w-24 md:h-24" />
                       <h3 className="font-bold text-blue-800 text-lg mt-3">{match.team1.name}</h3>
                       <div className="flex items-center justify-center mt-2">
+                        <Star className="h-4 w-4 text-yellow-500 mr-1" />
+                        <span className="text-blue-600 font-semibold">{match.team1.captain}</span>
+                      </div>
+                    </div> */}
+                    
+                    <div className="text-center">
+                      <div className="flex justify-center mb-3">
+                        <TeamLogo team={match.team1} size="w-24 h-24 md:w-24 md:h-24" />
+                      </div>
+                      <h3 className="font-bold text-blue-800 text-lg mb-2">{match.team1.name}</h3>
+                      <div className="flex items-center justify-center">
                         <Star className="h-4 w-4 text-yellow-500 mr-1" />
                         <span className="text-blue-600 font-semibold">{match.team1.captain}</span>
                       </div>
@@ -426,10 +437,22 @@ const Matches = () => {
                     </div>
 
                     {/* Team 2 */}
-                    <div className="text-center">
+                    {/* <div className="text-center">
                       <TeamLogo team={match.team2} size="w-20 h-20 md:w-24 md:h-24" />
                       <h3 className="font-bold text-blue-800 text-lg mt-3">{match.team2.name}</h3>
                       <div className="flex items-center justify-center mt-2">
+                        <Star className="h-4 w-4 text-yellow-500 mr-1" />
+                        <span className="text-blue-600 font-semibold">{match.team2.captain}</span>
+                      </div>
+                    </div>
+                  </div> */}
+
+                  <div className="text-center">
+                      <div className="flex justify-center mb-3">
+                        <TeamLogo team={match.team2} size="w-24 h-24 md:w-24 md:h-24" />
+                      </div>
+                      <h3 className="font-bold text-blue-800 text-lg mb-2">{match.team2.name}</h3>
+                      <div className="flex items-center justify-center">
                         <Star className="h-4 w-4 text-yellow-500 mr-1" />
                         <span className="text-blue-600 font-semibold">{match.team2.captain}</span>
                       </div>

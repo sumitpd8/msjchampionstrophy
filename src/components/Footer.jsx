@@ -30,7 +30,7 @@ const Footer = () => {
 
 
           {/* Techanical Support */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4 text-white-400">Contact For Techanical services</h3>
             <h3 className="text-sm mb-1 text-white-400">We specialize in building scalable, modern, and visually stunning solutions tailored to your needs. Our services include:</h3>
             <h3 className="text-sm mb-1 text-white-400">Web Development: Crafting responsive and feature-rich websites to enhance your online presence.</h3>
@@ -38,23 +38,23 @@ const Footer = () => {
              <h3 className="text-sm mb-1 text-white-400">Technical Support: Providing reliable and timely assistance to ensure smooth operations.</h3>
              
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3"> */}
                 {/* <MapPin className="h-5 w-5 text-black-400" /> */}
-                <p className="text-sm">📍 Kolkata, West Bengal</p>
+                {/* <p className="text-sm">📍 Kolkata, West Bengal</p>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3"> */}
                 {/* <Phone className="h-5 w-5 text-black-400" /> */}
-                <div className="text-sm">
+                {/* <div className="text-sm">
                   <p>📞 Sumit Prasad: 9519415846</p>
                   <p>📞 Akash Kumar Sinha: 6205474903</p>
                 </div>
-              </div>
-              <div className="flex items-center space-x-3">
+              </div> */}
+              {/* <div className="flex items-center space-x-3"> */}
                 {/* <Clock className="h-5 w-5 text-white-400" /> */}
-                <p className="text-sm">🕒10:00 AM                 to 07:00 PM</p>
+                {/* <p className="text-sm">🕒10:00 AM                 to 07:00 PM</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
           <div>

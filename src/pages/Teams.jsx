@@ -393,15 +393,26 @@ const Teams = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredTeams.map((team) => (
               <div key={team.id} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-blue-100 hover:scale-105">
-                {/* Team Header */}
+                {/* Team Header
                 <div className="bg-gradient-to-r from-blue-600 to-blue-800 p-6 text-white text-center">
                   <TeamLogo team={team} size="w-24 h-24" />
                   <h3 className="font-bold text-xl mt-4 mb-2">{team.name}</h3>
                   <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm inline-block">
                     {team.category} Team
                   </div>
-                </div>
+                </div> */}
 
+              {/* Team Header */}
+                <div className="bg-gradient-to-r from-blue-600 to-blue-800 p-6 text-white text-center">
+                  <div className="flex justify-center mb-4">
+                    <TeamLogo team={team} size="w-40 h-40" />
+                  </div>
+                  <h3 className="font-bold text-xl mb-2">{team.name}</h3>
+                  <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm inline-block">
+                    {team.category} Team
+                  </div>
+                </div>
+                
                 {/* Team Info */}
                 <div className="p-6">
                   <div className="space-y-3 mb-6">

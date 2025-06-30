@@ -220,7 +220,7 @@ const Home = () => {
 
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue via-indigo to-blue text-white py-20">
+      <section className="relative bg-gradient-to-r from-white via-white to-white text-white py-10">
         {/* Stadium Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-900"

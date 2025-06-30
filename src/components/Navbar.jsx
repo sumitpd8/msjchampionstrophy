@@ -24,8 +24,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-mid space-x-2">
-              <Trophy className="h-8 w-8 text-blue-600" />
+            <Link to="/" className="flex items-mid space-x-4">
+              <Trophy className="h-8 w-8 text-yellow-600" />
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">MSJ Champions Trophy</span>
             </Link>
           </div>
