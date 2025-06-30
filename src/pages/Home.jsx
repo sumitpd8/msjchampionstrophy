@@ -656,7 +656,7 @@ const Home = () => {
                   <MapPin className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">Koyla Veer Baba Cricket Ground</h3>
-                    <p className="text-gray-600">Durjanpur (Nai Basti), Ballia (Uttar Pradesh)</p>
+                    <p className="text-gray-600">Durjanpur (Nai Basti), Ballia, Uttar Pradesh. PIN - 277208</p>
                   </div>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
