@@ -20,23 +20,23 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-white shadow-xl sticky top-0 z-50 border-b-2 border-blue-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+    <nav className="bg-white shadow-xl sticky top-0 z-50 border-b-2 border-blue-50">
+      <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-12">
           <div className="flex items-center">
-            <Link to="/" className="flex items-mid space-x-4">
-              <Trophy className="h-8 w-8 text-yellow-600" />
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">MSJ Champions Trophy</span>
+            <Link to="/" className="flex items-center space-x-3">
+              <Trophy className="h-7 w-7 text-yellow-600" />
+              <span className="text-xl font-bold bg-gradient-to-r from-blue-700 to-indigo-800 bg-clip-text text-transparent">MSJ Champions Trophy</span>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-100 ${
                   isActive(item.href)
                     ? 'text-blue-600 bg-blue-50 border-b-2 border-blue-600 shadow-sm'
                     : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'

@@ -223,7 +223,7 @@ const Home = () => {
       <section className="relative bg-gradient-to-r from-white via-white to-white text-white py-10">
         {/* Stadium Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-900"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
           style={{ backgroundImage: `url(/images/Gallary/05.png)` }}>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>

@@ -161,7 +161,7 @@ const About = () => {
     ))}
   </div>
 </div>
-
+2
 
         {/* Technical Support
         <div className="mb-16">
