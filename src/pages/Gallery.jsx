@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, X, Image, Video } from 'lucide-react';
+import { X, Image  } from 'lucide-react';
 
 const Gallery = () => {
   const [selectedMedia, setSelectedMedia] = useState(null);
@@ -22,14 +22,14 @@ const Gallery = () => {
       title: 'Cricket Ground View',
       category: 'venue'
     },
-    {
-      id: 3,
-      type: 'video',
-      url: 'https://player.vimeo.com/video/123456791',
-      thumbnail: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=400',
-      title: 'Match Highlights - Final',
-      category: 'match'
-    },
+    // {
+    //   id: 3,
+    //   type: 'video',
+    //   url: 'https://player.vimeo.com/video/123456791',
+    //   thumbnail: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=400',
+    //   title: 'Match Highlights - Final',
+    //   category: 'match'
+    // },
     {
       id: 4,
       type: 'image',
@@ -46,14 +46,14 @@ const Gallery = () => {
       title: 'Chief Guests Arrival',
       category: 'ceremony'
     },
-    {
-      id: 6,
-      type: 'video',
-      url: 'https://player.vimeo.com/video/123456790',
-      thumbnail: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=400',
-      title: 'Tournament Promo Video',
-      category: 'promotional'
-    },
+    // {
+    //   id: 6,
+    //   type: 'video',
+    //   url: 'https://player.vimeo.com/video/123456790',
+    //   thumbnail: 'https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=400',
+    //   title: 'Tournament Promo Video',
+    //   category: 'promotional'
+    // },
     {
       id: 7,
       type: 'image',
@@ -70,14 +70,14 @@ const Gallery = () => {
       title: 'Victory Celebration',
       category: 'ceremony'
     },
-    {
-      id: 9,
-      type: 'video',
-      url: 'https://player.vimeo.com/video/123456791',
-      thumbnail: 'https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=400',
-      title: 'Behind the Scenes',
-      category: 'behind-scenes'
-    },
+    // {
+    //   id: 9,
+    //   type: 'video',
+    //   url: 'https://player.vimeo.com/video/123456791',
+    //   thumbnail: 'https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=400',
+    //   title: 'Behind the Scenes',
+    //   category: 'behind-scenes'
+    // },
     {
       id: 10,
       type: 'image',
@@ -107,7 +107,7 @@ const Gallery = () => {
   const tabs = [
     { id: 'all', name: 'All Media', count: mediaItems.length },
     { id: 'image', name: 'Photos', count: mediaItems.filter(item => item.type === 'image').length },
-    { id: 'video', name: 'Videos', count: mediaItems.filter(item => item.type === 'video').length }
+    // { id: 'video', name: 'Videos', count: mediaItems.filter(item => item.type === 'video').length }
   ];
 
   const filteredMedia = activeTab === 'all' 

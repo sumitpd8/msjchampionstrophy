@@ -254,7 +254,7 @@ const Home = () => {
       </section>    
         
       {/* Upcoming Tournament 2026 Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section className="py-16 bg-gradient-to-br from-blue-10 to-indigo-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Star className="h-16 w-16 mx-auto mb-6 text-yellow-500" />
@@ -441,7 +441,7 @@ const Home = () => {
 
 
       {/* Sponsorship Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800">
+      <section className="py-16 bg-gradient-to-r from-blue-500 to-blue-500">
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           
