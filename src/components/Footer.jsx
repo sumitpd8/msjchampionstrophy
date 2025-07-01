@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-300" />
-                <span className="text-sm text-blue-100">msjchampionstrophy@email.com</span>
+                <span className="text-sm text-blue-100">msjchampionstrophy@gmail.com</span>
               </div>
 
               <div className="flex items-center space-x-2">
@@ -92,7 +92,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-blue-700 mt-8 pt-8 text-center">
           <p className="text-sm text-white-200">
-            © 2026 Maa Shayar Jagdamba Champions Trophy. Organized by Maa Shayar Jagdamba Seva Sansthan.
+            © 2025 Maa Shayar Jagdamba Champions Trophy. Organized by Maa Shayar Jagdamba Seva Sansthan.
           </p>
           <p className="text-xs text-white mt-2">
             Dedicated to the sacred memory of Mukhdev Bhagat Ji
