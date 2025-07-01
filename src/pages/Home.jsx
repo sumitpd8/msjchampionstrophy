@@ -311,7 +311,7 @@ const Home = () => {
       </section>  
 
       {/* Tournament Winner 2025 Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-200 via-yellow-400 to-blue-200">
+      <section className="py-16 bg-gradient-to-r from-blue-200 via-blue-500 to-blue-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="bg-gradient-to-r from-white to-gray-100 p-4 rounded-full shadow-2xl w-fit mx-auto mb-6">
