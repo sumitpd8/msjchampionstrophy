@@ -281,7 +281,7 @@ const Home = () => {
         {/* Stadium Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
-          style={{ backgroundImage: `url(/images/Gallary/05.png)` }}>
+          style={{ backgroundImage: `url(/images/Gallary/Background1.jpg)` }}>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -311,7 +311,7 @@ const Home = () => {
       </section>  
 
       {/* Tournament Winner 2025 Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-200 via-blue-500 to-blue-200">
+      <section className="py-16 bg-gradient-to-r from-indigo-200 via-indigo-500 to-indigo-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="bg-gradient-to-r from-white to-gray-100 p-4 rounded-full shadow-2xl w-fit mx-auto mb-6">
@@ -418,14 +418,14 @@ const Home = () => {
       </section>
        
       {/* Upcoming Tournament 2026 Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-10 to-indigo-10">
+      <section className="py-16 bg-gradient-to-r from-indigo-200 via-indigo-500 to-indigo-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Star className="h-16 w-16 mx-auto mb-6 text-yellow-500" />
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               MSJ Champions Trophy 2026
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-white max-w-2xl mx-auto">
               The most awaited cricket tournament is back! Register now for the biggest championship of 2026
             </p>
           </div>
