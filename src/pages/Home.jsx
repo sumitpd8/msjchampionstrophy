@@ -310,112 +310,7 @@ const Home = () => {
         </div>
       </section>  
 
-      {/* Tournament Winner 2025 Section */}
-      <section className="py-16 bg-gradient-to-r from-indigo-200 via-indigo-500 to-indigo-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="bg-gradient-to-r from-white to-gray-100 p-4 rounded-full shadow-2xl w-fit mx-auto mb-6">
-              <Crown className="h-12 w-12 text-yellow-600" />
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">🏆 2025 Tournament Champions</h2>
-            <p className="text-xl text-yellow-100">Celebrating our 2025 winners and their incredible achievements</p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden hover:scale-105 transition-all duration-300">
-              {/* Year Header */}
-              <div className="bg-gradient-to-r from-blue-600 to-blue-800 p-6 text-white text-center">
-                <h3 className="text-2xl font-bold mb-2">MSJ Champions Trophy {tournamentWinner2025.year}</h3>
-                <div className="flex items-center justify-center">
-                  <Trophy className="h-6 w-6 text-yellow-400 mr-2" />
-                  <span className="text-yellow-400 font-semibold">Tournament Winners</span>
-                </div>
-              </div>
-
-              {/* Winners Display */}
-              <div className="p-6">
-                {/* Champion */}
-                <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 p-6 rounded-xl mb-6 border-2 border-yellow-300">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center">
-                      <Crown className="h-8 w-8 text-yellow-600 mr-3" />
-                      <span className="text-lg font-bold text-yellow-800">CHAMPION</span>
-                    </div>
-                    <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-4 py-2 rounded-full font-bold">
-                      {tournamentWinner2025.champion.prize}
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <TeamLogo team={tournamentWinner2025.champion} size="w-16 h-16" />
-                      <div className="ml-4">
-                        <h4 className="font-bold text-blue-800 text-xl">{tournamentWinner2025.champion.name}</h4>
-                        <p className="text-blue-600">Captain: {tournamentWinner2025.champion.captain}</p>
-                      </div>
-                    </div>
-                    <Medal className="h-12 w-12 text-yellow-500" />
-                  </div>
-                </div>
-
-                {/* Runner Up */}
-                <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl mb-6 border-2 border-gray-300">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center">
-                      <Medal className="h-8 w-8 text-gray-600 mr-3" />
-                      <span className="text-lg font-bold text-gray-800">RUNNER UP</span>
-                    </div>
-                    <div className="bg-gradient-to-r from-gray-500 to-gray-600 text-white px-4 py-2 rounded-full font-bold">
-                      {tournamentWinner2025.runnerUp.prize}
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <TeamLogo team={tournamentWinner2025.runnerUp} size="w-16 h-16" />
-                      <div className="ml-4">
-                        <h4 className="font-bold text-blue-800 text-xl">{tournamentWinner2025.runnerUp.name}</h4>
-                        <p className="text-blue-600">Captain: {tournamentWinner2025.runnerUp.captain}</p>
-                      </div>
-                    </div>
-                    <Medal className="h-12 w-12 text-gray-500" />
-                  </div>
-                </div>
-
-                {/* Man of the Tournament */}
-                <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-xl border-2 border-blue-300">
-                  <div className="flex items-center mb-4">
-                    <Star className="h-8 w-8 text-blue-600 mr-3" />
-                    <span className="text-lg font-bold text-blue-800">MAN OF THE TOURNAMENT</span>
-                  </div>
-                  
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-bold text-blue-800 text-xl">{tournamentWinner2025.manOfTournament.name}</h4>
-                      <p className="text-blue-600">Team: {tournamentWinner2025.manOfTournament.team}</p>
-                      <p className="text-blue-500 text-sm">{tournamentWinner2025.manOfTournament.stats}</p>
-                    </div>
-                    <Star className="h-12 w-12 text-blue-500" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Call to Action */}
-            <div className="text-center mt-12">
-              <p className="text-xl text-white mb-6">Will your team be the next champion?</p>
-              <Link
-                to="/contact"
-                className="inline-flex items-center px-10 py-5 bg-white hover:bg-gray-100 text-yellow-600 font-bold text-xl rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
-              >
-                <Trophy className="h-6 w-6 mr-3" />
-                Register for 2026
-                <ArrowRight className="ml-3 h-6 w-6" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      
        
       {/* Upcoming Tournament 2026 Section */}
       <section className="py-16 bg-gradient-to-r from-indigo-200 via-indigo-500 to-indigo-200">
@@ -530,6 +425,114 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Tournament Winner 2025 Section */}
+      <section className="py-16 bg-gradient-to-r from-indigo-200 via-indigo-500 to-indigo-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="bg-gradient-to-r from-white to-gray-100 p-4 rounded-full shadow-2xl w-fit mx-auto mb-6">
+              <Crown className="h-12 w-12 text-yellow-600" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">🏆 2025 Tournament Champions</h2>
+            <p className="text-xl text-yellow-100">Celebrating our 2025 winners and their incredible achievements</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden hover:scale-105 transition-all duration-300">
+              {/* Year Header */}
+              <div className="bg-gradient-to-r from-blue-600 to-blue-800 p-6 text-white text-center">
+                <h3 className="text-2xl font-bold mb-2">MSJ Champions Trophy {tournamentWinner2025.year}</h3>
+                <div className="flex items-center justify-center">
+                  <Trophy className="h-6 w-6 text-yellow-400 mr-2" />
+                  <span className="text-yellow-400 font-semibold">Tournament Winners</span>
+                </div>
+              </div>
+
+              {/* Winners Display */}
+              <div className="p-6">
+                {/* Champion */}
+                <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 p-6 rounded-xl mb-6 border-2 border-yellow-300">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center">
+                      <Crown className="h-8 w-8 text-yellow-600 mr-3" />
+                      <span className="text-lg font-bold text-yellow-800">CHAMPION</span>
+                    </div>
+                    <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-4 py-2 rounded-full font-bold">
+                      {tournamentWinner2025.champion.prize}
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <TeamLogo team={tournamentWinner2025.champion} size="w-16 h-16" />
+                      <div className="ml-4">
+                        <h4 className="font-bold text-blue-800 text-xl">{tournamentWinner2025.champion.name}</h4>
+                        <p className="text-blue-600">Captain: {tournamentWinner2025.champion.captain}</p>
+                      </div>
+                    </div>
+                    <Medal className="h-12 w-12 text-yellow-500" />
+                  </div>
+                </div>
+
+                {/* Runner Up */}
+                <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl mb-6 border-2 border-gray-300">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center">
+                      <Medal className="h-8 w-8 text-gray-600 mr-3" />
+                      <span className="text-lg font-bold text-gray-800">RUNNER UP</span>
+                    </div>
+                    <div className="bg-gradient-to-r from-gray-500 to-gray-600 text-white px-4 py-2 rounded-full font-bold">
+                      {tournamentWinner2025.runnerUp.prize}
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <TeamLogo team={tournamentWinner2025.runnerUp} size="w-16 h-16" />
+                      <div className="ml-4">
+                        <h4 className="font-bold text-blue-800 text-xl">{tournamentWinner2025.runnerUp.name}</h4>
+                        <p className="text-blue-600">Captain: {tournamentWinner2025.runnerUp.captain}</p>
+                      </div>
+                    </div>
+                    <Medal className="h-12 w-12 text-gray-500" />
+                  </div>
+                </div>
+
+                {/* Man of the Tournament */}
+                <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-xl border-2 border-blue-300">
+                  <div className="flex items-center mb-4">
+                    <Star className="h-8 w-8 text-blue-600 mr-3" />
+                    <span className="text-lg font-bold text-blue-800">MAN OF THE TOURNAMENT</span>
+                  </div>
+                  
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h4 className="font-bold text-blue-800 text-xl">{tournamentWinner2025.manOfTournament.name}</h4>
+                      <p className="text-blue-600">Team: {tournamentWinner2025.manOfTournament.team}</p>
+                      <p className="text-blue-500 text-sm">{tournamentWinner2025.manOfTournament.stats}</p>
+                    </div>
+                    <Star className="h-12 w-12 text-blue-500" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Call to Action */}
+            <div className="text-center mt-12">
+              <p className="text-xl text-white mb-6">Will your team be the next champion?</p>
+              <Link
+                to="/contact"
+                className="inline-flex items-center px-10 py-5 bg-white hover:bg-gray-100 text-yellow-600 font-bold text-xl rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              >
+                <Trophy className="h-6 w-6 mr-3" />
+                Register for 2026
+                <ArrowRight className="ml-3 h-6 w-6" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Cricket Scoreboard Section with Custom Team Logos */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800">
