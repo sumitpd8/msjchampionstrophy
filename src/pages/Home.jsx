@@ -281,7 +281,7 @@ const Home = () => {
         {/* Stadium Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
-          style={{ backgroundImage: `url(/images/Gallary/Background1.jpg)` }}>
+          style={{ backgroundImage: `url(/images/Gallary/Background2.jpg)` }}>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -309,9 +309,7 @@ const Home = () => {
           </div>
         </div>
       </section>  
-
-      
-       
+             
       {/* Upcoming Tournament 2026 Section */}
       <section className="py-16 bg-gradient-to-r from-indigo-200 via-indigo-500 to-indigo-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
