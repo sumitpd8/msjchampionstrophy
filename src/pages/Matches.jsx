@@ -23,10 +23,10 @@ const Matches = () => {
     {
       id: 1,
       team1: {
-        name: 'Thunder Bolts',
+        name: 'Team 1',
         logo: '/images/teams/thunder-bolts.png', // Add your logo here
         fallbackLogo: '⚡',
-        captain: 'Rajesh Kumar',
+        captain: 'Sudhir Gond',
         players: [
           'Rajesh Kumar (C)', 'Amit Singh', 'Pradeep Yadav', 'Suresh Gupta', 'Vikash Sharma',
           'Deepak Kumar', 'Ravi Verma', 'Santosh Singh', 'Manoj Yadav', 'Ashok Kumar',
@@ -34,232 +34,232 @@ const Matches = () => {
         ]
       },
       team2: {
-        name: 'Fire Eagles',
+        name: 'Team 2',
         logo: '/images/teams/fire-eagles.png', // Add your logo here
         fallbackLogo: '🔥',
-        captain: 'Sanjay Yadav',
+        captain: 'Shakti Yadav',
         players: [
           'Sanjay Yadav (C)', 'Vinod Kumar', 'Anil Singh', 'Rakesh Verma', 'Pankaj Yadav',
           'Shyam Sundar', 'Gopal Singh', 'Bharat Kumar', 'Naresh Yadav', 'Umesh Singh',
           'Kamal Verma', 'Jagdish Kumar', 'Brijesh Yadav', 'Satish Singh', 'Mohan Kumar'
         ]
       },
-      date: '2026-01-15',
-      time: '10:00 AM',
+      date: '',
+      time: '',
       venue: 'Koyla Veer Baba Cricket Ground',
       matchType: 'Group Stage',
       status: 'Upcoming'
     },
-    {
-      id: 2,
-      team1: {
-        name: 'Storm Riders',
-        logo: '/images/teams/storm-riders.png', // Add your logo here
-        fallbackLogo: '🌪️',
-        captain: 'Ankit Sharma',
-        players: [
-          'Ankit Sharma (C)', 'Rohit Gupta', 'Sachin Yadav', 'Manish Kumar', 'Vivek Singh',
-          'Arjun Verma', 'Kiran Kumar', 'Nitin Yadav', 'Rahul Singh', 'Gaurav Kumar',
-          'Shivam Verma', 'Aman Singh', 'Harsh Yadav', 'Yash Kumar', 'Dev Singh'
-        ]
-      },
-      team2: {
-        name: 'Royal Kings',
-        logo: '/images/teams/royal-kings.png', // Add your logo here
-        fallbackLogo: '👑',
-        captain: 'Abhishek Verma',
-        players: [
-          'Abhishek Verma (C)', 'Shubham Singh', 'Akash Yadav', 'Vishal Kumar', 'Neeraj Gupta',
-          'Lokesh Verma', 'Praveen Singh', 'Jitendra Yadav', 'Saurabh Kumar', 'Ranjan Singh',
-          'Deepak Verma', 'Anuj Yadav', 'Sumit Kumar', 'Varun Singh', 'Rishabh Verma'
-        ]
-      },
-      date: '2026-01-16',
-      time: '2:00 PM',
-      venue: 'Koyla Veer Baba Cricket Ground',
-      matchType: 'Group Stage',
-      status: 'Upcoming'
-    },
-    {
-      id: 3,
-      team1: {
-        name: 'Lightning Warriors',
-        logo: '/images/teams/lightning-warriors.png', // Add your logo here
-        fallbackLogo: '⚔️',
-        captain: 'Dheeraj Singh',
-        players: [
-          'Dheeraj Singh (C)', 'Ajit Kumar', 'Bhupendra Yadav', 'Chandan Verma', 'Dilip Singh',
-          'Eshwar Kumar', 'Firoz Yadav', 'Ghanshyam Singh', 'Harish Verma', 'Indra Kumar',
-          'Javed Yadav', 'Kishore Singh', 'Lalit Verma', 'Mahesh Kumar', 'Narayan Singh'
-        ]
-      },
-      team2: {
-        name: 'Golden Panthers',
-        logo: '/images/teams/golden-panthers.png', // Add your logo here
-        fallbackLogo: '🐆',
-        captain: 'Ravi Shankar',
-        players: [
-          'Ravi Shankar (C)', 'Omprakash Yadav', 'Pappu Singh', 'Qadir Verma', 'Rambabu Kumar',
-          'Shailendra Singh', 'Tribhuvan Yadav', 'Upendra Verma', 'Vinay Kumar', 'Wasim Singh',
-          'Xylem Yadav', 'Yogesh Verma', 'Zafar Kumar', 'Bablu Singh', 'Chunnu Yadav'
-        ]
-      },
-      date: '2026-01-17',
-      time: '10:00 AM',
-      venue: 'Koyla Veer Baba Cricket Ground',
-      matchType: 'Group Stage',
-      status: 'Upcoming'
-    },
-    {
-      id: 4,
-      team1: {
-        name: 'Blue Sharks',
-        logo: '/images/teams/blue-sharks.png', // Add your logo here
-        fallbackLogo: '🦈',
-        captain: 'Santosh Kumar',
-        players: [
-          'Santosh Kumar (C)', 'Babloo Singh', 'Chotu Yadav', 'Dharmendra Verma', 'Eklavya Kumar',
-          'Fateh Singh', 'Guddu Yadav', 'Hemant Verma', 'Ishwar Kumar', 'Jitesh Singh',
-          'Kailash Yadav', 'Lallan Verma', 'Munna Kumar', 'Nanhe Singh', 'Om Yadav'
-        ]
-      },
-      team2: {
-        name: 'Red Dragons',
-        logo: '/images/teams/red-dragons.png', // Add your logo here
-        fallbackLogo: '🐉',
-        captain: 'Mukesh Singh',
-        players: [
-          'Mukesh Singh (C)', 'Pappu Yadav', 'Qasim Verma', 'Raju Kumar', 'Sonu Singh',
-          'Tinku Yadav', 'Uday Verma', 'Vinod Kumar', 'Waseem Singh', 'Xylo Yadav',
-          'Yogi Verma', 'Zakir Kumar', 'Bunty Singh', 'Chintu Yadav', 'Dablu Verma'
-        ]
-      },
-      date: '2026-01-18',
-      time: '2:00 PM',
-      venue: 'Koyla Veer Baba Cricket Ground',
-      matchType: 'Group Stage',
-      status: 'Upcoming'
-    },
-    {
-      id: 5,
-      team1: {
-        name: 'Green Vipers',
-        logo: '/images/teams/green-vipers.png', // Add your logo here
-        fallbackLogo: '🐍',
-        captain: 'Ashish Yadav',
-        players: [
-          'Ashish Yadav (C)', 'Bittu Singh', 'Chandan Verma', 'Deepu Kumar', 'Eshwar Singh',
-          'Firoz Yadav', 'Golu Verma', 'Harsh Kumar', 'Imran Singh', 'Jitu Yadav',
-          'Kanha Verma', 'Lucky Kumar', 'Monu Singh', 'Nandu Yadav', 'Omi Verma'
-        ]
-      },
-      team2: {
-        name: 'Silver Hawks',
-        logo: '/images/teams/silver-hawks.png', // Add your logo here
-        fallbackLogo: '🦅',
-        captain: 'Prashant Kumar',
-        players: [
-          'Prashant Kumar (C)', 'Pintu Singh', 'Qurban Yadav', 'Rinku Verma', 'Sunny Kumar',
-          'Tillu Singh', 'Ujjwal Yadav', 'Vicky Verma', 'Wajid Kumar', 'Xylem Singh',
-          'Yuvraj Yadav', 'Zeeshan Verma', 'Bunny Kumar', 'Chiku Singh', 'Dolly Yadav'
-        ]
-      },
-      date: '2026-01-19',
-      time: '10:00 AM',
-      venue: 'Koyla Veer Baba Cricket Ground',
-      matchType: 'Quarter Final',
-      status: 'Upcoming'
-    },
-    {
-      id: 6,
-      team1: {
-        name: 'Black Tigers',
-        logo: '/images/teams/black-tigers.png', // Add your logo here
-        fallbackLogo: '🐅',
-        captain: 'Rohit Verma',
-        players: [
-          'Rohit Verma (C)', 'Bittu Yadav', 'Chotu Singh', 'Deepak Verma', 'Eshwar Kumar',
-          'Firoz Singh', 'Guddu Yadav', 'Hemant Verma', 'Imran Kumar', 'Jitesh Singh',
-          'Kailash Yadav', 'Lallan Verma', 'Munna Kumar', 'Nanhe Singh', 'Om Yadav'
-        ]
-      },
-      team2: {
-        name: 'White Lions',
-        logo: '/images/teams/white-lions.png', // Add your logo here
-        fallbackLogo: '🦁',
-        captain: 'Sunil Yadav',
-        players: [
-          'Sunil Yadav (C)', 'Pappu Singh', 'Qasim Verma', 'Raju Kumar', 'Sonu Singh',
-          'Tinku Yadav', 'Uday Verma', 'Vinod Kumar', 'Waseem Singh', 'Xylo Yadav',
-          'Yogi Verma', 'Zakir Kumar', 'Bunty Singh', 'Chintu Yadav', 'Dablu Verma'
-        ]
-      },
-      date: '2026-01-20',
-      time: '2:00 PM',
-      venue: 'Koyla Veer Baba Cricket Ground',
-      matchType: 'Quarter Final',
-      status: 'Upcoming'
-    },
-    {
-      id: 7,
-      team1: {
-        name: 'Purple Wolves',
-        logo: '/images/teams/purple-wolves.png', // Add your logo here
-        fallbackLogo: '🐺',
-        captain: 'Manoj Kumar',
-        players: [
-          'Manoj Kumar (C)', 'Bittu Verma', 'Chandan Singh', 'Deepu Yadav', 'Eshwar Verma',
-          'Firoz Kumar', 'Golu Singh', 'Harsh Yadav', 'Imran Verma', 'Jitu Kumar',
-          'Kanha Singh', 'Lucky Yadav', 'Monu Verma', 'Nandu Kumar', 'Omi Singh'
-        ]
-      },
-      team2: {
-        name: 'Orange Foxes',
-        logo: '/images/teams/orange-foxes.png', // Add your logo here
-        fallbackLogo: '🦊',
-        captain: 'Vikash Yadav',
-        players: [
-          'Vikash Yadav (C)', 'Pintu Verma', 'Qurban Kumar', 'Rinku Singh', 'Sunny Yadav',
-          'Tillu Verma', 'Ujjwal Kumar', 'Vicky Singh', 'Wajid Yadav', 'Xylem Verma',
-          'Yuvraj Kumar', 'Zeeshan Singh', 'Bunny Yadav', 'Chiku Verma', 'Dolly Kumar'
-        ]
-      },
-      date: '2026-01-21',
-      time: '10:00 AM',
-      venue: 'Koyla Veer Baba Cricket Ground',
-      matchType: 'Semi Final',
-      status: 'Upcoming'
-    },
-    {
-      id: 8,
-      team1: {
-        name: 'Crimson Bulls',
-        logo: '/images/teams/crimson-bulls.png', // Add your logo here
-        fallbackLogo: '🐂',
-        captain: 'Ajay Singh',
-        players: [
-          'Ajay Singh (C)', 'Bittu Kumar', 'Chotu Verma', 'Deepak Singh', 'Eshwar Yadav',
-          'Firoz Verma', 'Guddu Kumar', 'Hemant Singh', 'Imran Yadav', 'Jitesh Verma',
-          'Kailash Kumar', 'Lallan Singh', 'Munna Yadav', 'Nanhe Verma', 'Om Kumar'
-        ]
-      },
-      team2: {
-        name: 'Azure Falcons',
-        logo: '/images/teams/azure-falcons.png', // Add your logo here
-        fallbackLogo: '🦅',
-        captain: 'Ravi Kumar',
-        players: [
-          'Ravi Kumar (C)', 'Pappu Verma', 'Qasim Singh', 'Raju Yadav', 'Sonu Verma',
-          'Tinku Kumar', 'Uday Singh', 'Vinod Yadav', 'Waseem Verma', 'Xylo Kumar',
-          'Yogi Singh', 'Zakir Yadav', 'Bunty Verma', 'Chintu Kumar', 'Dablu Singh'
-        ]
-      },
-      date: '2026-01-22',
-      time: '2:00 PM',
-      venue: 'Koyla Veer Baba Cricket Ground',
-      matchType: 'Final',
-      status: 'Upcoming'
-    }
+    // {
+    //   id: 2,
+    //   team1: {
+    //     name: 'Storm Riders',
+    //     logo: '/images/teams/storm-riders.png', // Add your logo here
+    //     fallbackLogo: '🌪️',
+    //     captain: 'Ankit Sharma',
+    //     players: [
+    //       'Ankit Sharma (C)', 'Rohit Gupta', 'Sachin Yadav', 'Manish Kumar', 'Vivek Singh',
+    //       'Arjun Verma', 'Kiran Kumar', 'Nitin Yadav', 'Rahul Singh', 'Gaurav Kumar',
+    //       'Shivam Verma', 'Aman Singh', 'Harsh Yadav', 'Yash Kumar', 'Dev Singh'
+    //     ]
+    //   },
+    //   team2: {
+    //     name: 'Royal Kings',
+    //     logo: '/images/teams/royal-kings.png', // Add your logo here
+    //     fallbackLogo: '👑',
+    //     captain: 'Abhishek Verma',
+    //     players: [
+    //       'Abhishek Verma (C)', 'Shubham Singh', 'Akash Yadav', 'Vishal Kumar', 'Neeraj Gupta',
+    //       'Lokesh Verma', 'Praveen Singh', 'Jitendra Yadav', 'Saurabh Kumar', 'Ranjan Singh',
+    //       'Deepak Verma', 'Anuj Yadav', 'Sumit Kumar', 'Varun Singh', 'Rishabh Verma'
+    //     ]
+    //   },
+    //   date: '2026-01-16',
+    //   time: '2:00 PM',
+    //   venue: 'Koyla Veer Baba Cricket Ground',
+    //   matchType: 'Group Stage',
+    //   status: 'Upcoming'
+    // },
+    // {
+    //   id: 3,
+    //   team1: {
+    //     name: 'Lightning Warriors',
+    //     logo: '/images/teams/lightning-warriors.png', // Add your logo here
+    //     fallbackLogo: '⚔️',
+    //     captain: 'Dheeraj Singh',
+    //     players: [
+    //       'Dheeraj Singh (C)', 'Ajit Kumar', 'Bhupendra Yadav', 'Chandan Verma', 'Dilip Singh',
+    //       'Eshwar Kumar', 'Firoz Yadav', 'Ghanshyam Singh', 'Harish Verma', 'Indra Kumar',
+    //       'Javed Yadav', 'Kishore Singh', 'Lalit Verma', 'Mahesh Kumar', 'Narayan Singh'
+    //     ]
+    //   },
+    //   team2: {
+    //     name: 'Golden Panthers',
+    //     logo: '/images/teams/golden-panthers.png', // Add your logo here
+    //     fallbackLogo: '🐆',
+    //     captain: 'Ravi Shankar',
+    //     players: [
+    //       'Ravi Shankar (C)', 'Omprakash Yadav', 'Pappu Singh', 'Qadir Verma', 'Rambabu Kumar',
+    //       'Shailendra Singh', 'Tribhuvan Yadav', 'Upendra Verma', 'Vinay Kumar', 'Wasim Singh',
+    //       'Xylem Yadav', 'Yogesh Verma', 'Zafar Kumar', 'Bablu Singh', 'Chunnu Yadav'
+    //     ]
+    //   },
+    //   date: '2026-01-17',
+    //   time: '10:00 AM',
+    //   venue: 'Koyla Veer Baba Cricket Ground',
+    //   matchType: 'Group Stage',
+    //   status: 'Upcoming'
+    // },
+    // {
+    //   id: 4,
+    //   team1: {
+    //     name: 'Blue Sharks',
+    //     logo: '/images/teams/blue-sharks.png', // Add your logo here
+    //     fallbackLogo: '🦈',
+    //     captain: 'Santosh Kumar',
+    //     players: [
+    //       'Santosh Kumar (C)', 'Babloo Singh', 'Chotu Yadav', 'Dharmendra Verma', 'Eklavya Kumar',
+    //       'Fateh Singh', 'Guddu Yadav', 'Hemant Verma', 'Ishwar Kumar', 'Jitesh Singh',
+    //       'Kailash Yadav', 'Lallan Verma', 'Munna Kumar', 'Nanhe Singh', 'Om Yadav'
+    //     ]
+    //   },
+    //   team2: {
+    //     name: 'Red Dragons',
+    //     logo: '/images/teams/red-dragons.png', // Add your logo here
+    //     fallbackLogo: '🐉',
+    //     captain: 'Mukesh Singh',
+    //     players: [
+    //       'Mukesh Singh (C)', 'Pappu Yadav', 'Qasim Verma', 'Raju Kumar', 'Sonu Singh',
+    //       'Tinku Yadav', 'Uday Verma', 'Vinod Kumar', 'Waseem Singh', 'Xylo Yadav',
+    //       'Yogi Verma', 'Zakir Kumar', 'Bunty Singh', 'Chintu Yadav', 'Dablu Verma'
+    //     ]
+    //   },
+    //   date: '2026-01-18',
+    //   time: '2:00 PM',
+    //   venue: 'Koyla Veer Baba Cricket Ground',
+    //   matchType: 'Group Stage',
+    //   status: 'Upcoming'
+    // },
+    // {
+    //   id: 5,
+    //   team1: {
+    //     name: 'Green Vipers',
+    //     logo: '/images/teams/green-vipers.png', // Add your logo here
+    //     fallbackLogo: '🐍',
+    //     captain: 'Ashish Yadav',
+    //     players: [
+    //       'Ashish Yadav (C)', 'Bittu Singh', 'Chandan Verma', 'Deepu Kumar', 'Eshwar Singh',
+    //       'Firoz Yadav', 'Golu Verma', 'Harsh Kumar', 'Imran Singh', 'Jitu Yadav',
+    //       'Kanha Verma', 'Lucky Kumar', 'Monu Singh', 'Nandu Yadav', 'Omi Verma'
+    //     ]
+    //   },
+    //   team2: {
+    //     name: 'Silver Hawks',
+    //     logo: '/images/teams/silver-hawks.png', // Add your logo here
+    //     fallbackLogo: '🦅',
+    //     captain: 'Prashant Kumar',
+    //     players: [
+    //       'Prashant Kumar (C)', 'Pintu Singh', 'Qurban Yadav', 'Rinku Verma', 'Sunny Kumar',
+    //       'Tillu Singh', 'Ujjwal Yadav', 'Vicky Verma', 'Wajid Kumar', 'Xylem Singh',
+    //       'Yuvraj Yadav', 'Zeeshan Verma', 'Bunny Kumar', 'Chiku Singh', 'Dolly Yadav'
+    //     ]
+    //   },
+    //   date: '2026-01-19',
+    //   time: '10:00 AM',
+    //   venue: 'Koyla Veer Baba Cricket Ground',
+    //   matchType: 'Quarter Final',
+    //   status: 'Upcoming'
+    // },
+    // {
+    //   id: 6,
+    //   team1: {
+    //     name: 'Black Tigers',
+    //     logo: '/images/teams/black-tigers.png', // Add your logo here
+    //     fallbackLogo: '🐅',
+    //     captain: 'Rohit Verma',
+    //     players: [
+    //       'Rohit Verma (C)', 'Bittu Yadav', 'Chotu Singh', 'Deepak Verma', 'Eshwar Kumar',
+    //       'Firoz Singh', 'Guddu Yadav', 'Hemant Verma', 'Imran Kumar', 'Jitesh Singh',
+    //       'Kailash Yadav', 'Lallan Verma', 'Munna Kumar', 'Nanhe Singh', 'Om Yadav'
+    //     ]
+    //   },
+    //   team2: {
+    //     name: 'White Lions',
+    //     logo: '/images/teams/white-lions.png', // Add your logo here
+    //     fallbackLogo: '🦁',
+    //     captain: 'Sunil Yadav',
+    //     players: [
+    //       'Sunil Yadav (C)', 'Pappu Singh', 'Qasim Verma', 'Raju Kumar', 'Sonu Singh',
+    //       'Tinku Yadav', 'Uday Verma', 'Vinod Kumar', 'Waseem Singh', 'Xylo Yadav',
+    //       'Yogi Verma', 'Zakir Kumar', 'Bunty Singh', 'Chintu Yadav', 'Dablu Verma'
+    //     ]
+    //   },
+    //   date: '2026-01-20',
+    //   time: '2:00 PM',
+    //   venue: 'Koyla Veer Baba Cricket Ground',
+    //   matchType: 'Quarter Final',
+    //   status: 'Upcoming'
+    // },
+    // {
+    //   id: 7,
+    //   team1: {
+    //     name: 'Purple Wolves',
+    //     logo: '/images/teams/purple-wolves.png', // Add your logo here
+    //     fallbackLogo: '🐺',
+    //     captain: 'Manoj Kumar',
+    //     players: [
+    //       'Manoj Kumar (C)', 'Bittu Verma', 'Chandan Singh', 'Deepu Yadav', 'Eshwar Verma',
+    //       'Firoz Kumar', 'Golu Singh', 'Harsh Yadav', 'Imran Verma', 'Jitu Kumar',
+    //       'Kanha Singh', 'Lucky Yadav', 'Monu Verma', 'Nandu Kumar', 'Omi Singh'
+    //     ]
+    //   },
+    //   team2: {
+    //     name: 'Orange Foxes',
+    //     logo: '/images/teams/orange-foxes.png', // Add your logo here
+    //     fallbackLogo: '🦊',
+    //     captain: 'Vikash Yadav',
+    //     players: [
+    //       'Vikash Yadav (C)', 'Pintu Verma', 'Qurban Kumar', 'Rinku Singh', 'Sunny Yadav',
+    //       'Tillu Verma', 'Ujjwal Kumar', 'Vicky Singh', 'Wajid Yadav', 'Xylem Verma',
+    //       'Yuvraj Kumar', 'Zeeshan Singh', 'Bunny Yadav', 'Chiku Verma', 'Dolly Kumar'
+    //     ]
+    //   },
+    //   date: '2026-01-21',
+    //   time: '10:00 AM',
+    //   venue: 'Koyla Veer Baba Cricket Ground',
+    //   matchType: 'Semi Final',
+    //   status: 'Upcoming'
+    // },
+    // {
+    //   id: 8,
+    //   team1: {
+    //     name: 'Crimson Bulls',
+    //     logo: '/images/teams/crimson-bulls.png', // Add your logo here
+    //     fallbackLogo: '🐂',
+    //     captain: 'Ajay Singh',
+    //     players: [
+    //       'Ajay Singh (C)', 'Bittu Kumar', 'Chotu Verma', 'Deepak Singh', 'Eshwar Yadav',
+    //       'Firoz Verma', 'Guddu Kumar', 'Hemant Singh', 'Imran Yadav', 'Jitesh Verma',
+    //       'Kailash Kumar', 'Lallan Singh', 'Munna Yadav', 'Nanhe Verma', 'Om Kumar'
+    //     ]
+    //   },
+    //   team2: {
+    //     name: 'Azure Falcons',
+    //     logo: '/images/teams/azure-falcons.png', // Add your logo here
+    //     fallbackLogo: '🦅',
+    //     captain: 'Ravi Kumar',
+    //     players: [
+    //       'Ravi Kumar (C)', 'Pappu Verma', 'Qasim Singh', 'Raju Yadav', 'Sonu Verma',
+    //       'Tinku Kumar', 'Uday Singh', 'Vinod Yadav', 'Waseem Verma', 'Xylo Kumar',
+    //       'Yogi Singh', 'Zakir Yadav', 'Bunty Verma', 'Chintu Kumar', 'Dablu Singh'
+    //     ]
+    //   },
+    //   date: '2026-01-22',
+    //   time: '2:00 PM',
+    //   venue: 'Koyla Veer Baba Cricket Ground',
+    //   matchType: 'Final',
+    //   status: 'Upcoming'
+    // }
   ];
 
   // Filter matches based on search term and filter type
