@@ -161,7 +161,7 @@ const handlePayment = async () => {
       };
 
       try {
-        const submitRes = await fetch("http://localhost:5000/api/register", {
+        const submitRes = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/register`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -7,7 +7,7 @@ const AdminPanel = () => {
   const navigate = useNavigate();
 
   const fetchRegs = async () => {
-    const res = await fetch('http://localhost:5000/api/register', {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/register`, {
       headers: { Authorization: `Bearer ${token}` }
     });
     if (res.ok) {
@@ -24,7 +24,7 @@ const AdminPanel = () => {
   }, [token]);
 
   const saveChanges = async (id, updatedData) => {
-    await fetch(`http://localhost:5000/api/register/${id}`, {
+    await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/register/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
