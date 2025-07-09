@@ -48,7 +48,7 @@ const Contact = () => {
             </div>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScsy4CqRwXdqIfg2XZ-gjXPnUSY4izuArch3UcgB75gBMNFgQ/viewform?usp=dialog"
+              href="/register"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 w-full justify-center"

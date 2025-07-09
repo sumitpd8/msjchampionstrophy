@@ -10,11 +10,14 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Register', href: '/register' },
     { name: 'Notice', href: '/notice' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Sponsorship', href: '/sponsorship' },
     { name: 'Matches', href: '/matches' },
     { name: 'Teams', href: '/teams' },
+
+
   ];
 
   const isActive = (path) => location.pathname === path;
