@@ -122,7 +122,7 @@ const handlePayment = async () => {
   // Step 1: Create Razorpay Order
   let orderData;
   try {
-    const res = await fetch("http://localhost:5000/create-order", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/create-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount: 1 }), // ₹1 (in INR, sent as 100 paise to Razorpay)
