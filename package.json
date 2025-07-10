@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "cp static.json dist/",
+    "postbuild": "cp public/_redirects dist/ && cp static.json dist/",
     "serve": "vite preview"
   },
   "dependencies": {
