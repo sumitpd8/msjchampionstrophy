@@ -4,15 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "proxy": "https://msjchampionstrophyserver.onrender.com",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "postbuild": "cp public/_redirects dist/ && cp static.json dist/",
-    "serve": "vite preview",
-    "start": "node server.js"
-
+    "serve": "vite preview"
   },
   "dependencies": {
     "axios": "^1.10.0",
