@@ -249,10 +249,7 @@ const handlePayment = async () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input name="teamName" value={formData.teamName} onChange={handleChange} placeholder="Team Name *" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
-              <select name="category" value={formData.category} onChange={handleChange} className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg">
-                <option value="Local">Local</option>
-                <option value="Regional">Regional</option>
-              </select>
+              
               <input name="homeGround" value={formData.homeGround} onChange={handleChange} placeholder="Home Ground" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
               <input name="founded" value={formData.founded} onChange={handleChange} type="number" placeholder="Founded Year" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
             </div>
