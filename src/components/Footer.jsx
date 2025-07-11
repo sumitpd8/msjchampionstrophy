@@ -67,7 +67,7 @@ const Footer = () => {
               <MapPin className="h-4 w-4 text-blue-300 mt-1 flex-shrink-0" />
               <div className="text-sm text-blue-100">
                 <p>Koyla Veer Baba Cricket Ground</p>
-                <p>Durjanpur (Nai Basti)</p>
+                <p>Durjanpur, Bairia</p>
                 <p>Ballia, Uttar Pradesh. PIN - 277208</p>
               </div>
             </div>

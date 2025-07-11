@@ -73,7 +73,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-gray-900">Tournament Venue</h3>
                   <p className="text-gray-600">Koyla Veer Baba Cricket Ground</p>
-                  <p className="text-gray-600">Durjanpur (Nai Basti), Ballia (Uttar Pradesh)</p>
+                  <p className="text-gray-600">Durjanpur, Bairia, Ballia (Uttar Pradesh)</p>
                 </div>
               </div>
             </div>

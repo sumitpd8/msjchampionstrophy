@@ -268,8 +268,9 @@ const Sponsorship = () => {
               <h3 className="text-xl font-bold text-white mb-4">Visit Us</h3>
               <div className="text-blue-100">
                 <p>Koyla Veer Baba Cricket Ground</p>
-                <p>Durjanpur (Nai Basti)</p>
+                <p>Durjanpur, Bairia</p>
                 <p>Ballia, Uttar Pradesh</p>
+                <p>PIN : 277208</p>
               </div>
             </div>
           </div>

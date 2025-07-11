@@ -563,7 +563,7 @@ const Teams = () => {
             Register your team for MSJ Champions Trophy 2026 and be part of this exciting cricket tournament
           </p>
           <Link
-            to="/contact"
+            to="/register"
             className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold text-xl rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
           >
             <Users className="h-6 w-6 mr-3" />

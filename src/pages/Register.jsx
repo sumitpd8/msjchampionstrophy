@@ -231,7 +231,7 @@ const handlePayment = async () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center space-x-8">
             <div className="flex items-center text-blue-600">
-              <span className="text-2xl md:text-5xl font-bold mb-6">Registration</span>
+              <span className="text-2xl md:text-3xl font-bold mb-6">Fillup and Pay</span>
             </div>
           </div>
         </div>

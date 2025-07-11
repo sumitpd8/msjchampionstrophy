@@ -16,20 +16,18 @@ const About = () => {
 
   const committeeMembers = [
     { name: 'Sudhir Gond', role: 'President', photo: '/images/OrganizingCommitteeMembers/sudhirgond.jpg' },
-    { name: 'Arun Yadav', role: 'Vice President', photo: '/images/OrganizingCommitteeMembers/ArunYadav.jpg' },
-    { name: 'Appu Yadav', role: 'Vice President', photo: '/images/OrganizingCommitteeMembers/AppuYadav.jpg' },
-    { name: 'Shakti Singh Yadav', role: 'Treasurer', photo: '/images/OrganizingCommitteeMembers/ShaktiSinghYadav.jpg'},
+    { name: 'Bholi Sharma', role: 'Vice President', photo: '/images/OrganizingCommitteeMembers/.jpg' },
     { name: 'Ranjan Verma', role: 'Treasurer', photo: '/images/OrganizingCommitteeMembers/RanjanVerma.jpg' },
     { name: 'Yashvendra Pratap Singh', role: 'Secretary', photo: '/images/OrganizingCommitteeMembers/YashvendraPratapSingh.jpg' },
-    { name: 'Golu Gond (Bagha)', role: 'General Secretary', photo: '/images/OrganizingCommitteeMembers/GoluGond.jpg' },
+    { name: 'Mukesh Yadav', role: 'Joint Secretary', photo: '/images/OrganizingCommitteeMembers/.jpg' },
     
   ];
 
-  //  const technicalSupport = [
-  //   { name: 'Sumit Prasad', role: 'Developer', photo: '/images/technicalSupport/SumitPrasad.jpg' },
-  //   { name: 'Akash Kumar Sinha',  role: 'Developer',photo: '/images/technicalSupport/AkashKumarSinha.jpg' },
-  //   { name: 'Sohom Roy', role: 'Developer', photo: '/images/technicalSupport/SohomRoy.jpg' },
-  // ];
+   const technicalSupport = [
+    { name: 'Sumit Prasad', role: 'Developer', photo: '/images/technicalSupport/SumitPrasad.png' },
+    { name: 'Akash Kumar Sinha',  role: 'Developer',photo: '/images/technicalSupport/AkashKumarSinha.jpg' },
+    { name: 'Sohom Roy', role: 'Developer', photo: '/images/technicalSupport/SohomRoy.jpg' },
+  ];
 
   const objectives = [
     {
@@ -161,9 +159,9 @@ const About = () => {
     ))}
   </div>
 </div>
-2
 
-        {/* Technical Support
+
+        {/* Technical Support */}
         <div className="mb-16">
   <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Technical Support</h2>
   <div className="flex flex-wrap justify-center gap-4">
@@ -184,7 +182,7 @@ const About = () => {
       </div>
     ))}
   </div>
-</div> */}
+</div>
 
         {/* Venue Information */}
         <div className="bg-gradient-to-r from-blue-600 to-pink-600 text-white rounded-lg p-8">
@@ -192,7 +190,7 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6">Tournament Venue</h2>
             <div className="max-w-2xl mx-auto">
               <h3 className="text-2xl font-semibold mb-4">Koyla Veer Baba Cricket Ground</h3>
-              <p className="text-lg mb-4">Durjanpur (Nai Basti), Ballia (Uttar Pradesh)</p>
+              <p className="text-lg mb-4">Durjanpur, Bairia, Ballia (Uttar Pradesh)</p>
               <p className="text-lg">
                 This venue is not only a hub for local sports enthusiasts but also symbolizes 
                 a confluence of sports, culture, and traditional values.

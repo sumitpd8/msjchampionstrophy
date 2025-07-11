@@ -14,7 +14,7 @@ const Home = () => {
       url: 'images/Gallary/03.jpg',
       alt: 'Cricket Ground',
       title: 'Tournament Ground',
-      description: 'Koyla Veer Baba Stadium - Our prestigious tournament venue'
+      description: 'Koyla Veer Baba Cricket Ground - Our prestigious tournament venue'
     },
     {
       id: 2,
@@ -78,7 +78,7 @@ const Home = () => {
 
     // registrationDeadline: '2026-01-15',
     
-    venue: 'Koyla Veer Baba Stadium, Ballia',
+    venue: 'Koyla Veer Baba Cricket Ground, Ballia',
     registrationFee: '₹5100 per team',
     prizePool: '₹51,000',
     runnerUpTeam: '₹21,000',
@@ -301,10 +301,10 @@ const Home = () => {
               <ChevronRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
-              to="/gallery"
+              to="/contact"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              View Gallery
+              Know more
             </Link>
           </div>
         </div>
@@ -774,8 +774,9 @@ const Home = () => {
       )}
       
       
+
       {/* Quick Contact Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -807,7 +808,9 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+
 
       {/* Venue Information */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
@@ -822,7 +825,7 @@ const Home = () => {
                   <MapPin className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">Koyla Veer Baba Cricket Ground</h3>
-                    <p className="text-gray-600">Durjanpur (Nai Basti), Ballia, Uttar Pradesh. PIN - 277208</p>
+                    <p className="text-gray-600">Durjanpur, Bairia, Ballia, Uttar Pradesh. PIN - 277208</p>
                   </div>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
