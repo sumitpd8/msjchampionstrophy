@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExternalLink, Phone, MapPin, Clock, Mail, Globe } from 'lucide-react';
+import { Link} from 'react-router-dom'
 
 const Contact = () => {
   const contactPersons = [
@@ -47,19 +48,26 @@ const Contact = () => {
               </ul>
             </div>
 
-            <a
+            {/* <a
               href="/register"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 w-full justify-center"
             >
               Register Your Team
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </a>
+          
+            </a> */}
+            <Link
+              to="/register"
+              className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 w-full justify-center"
+            >
+              Register Your Team
+            </Link>
+
             
-            <p className="text-sm text-gray-500 mt-4">
+            {/* <p className="text-sm text-gray-500 mt-4">
               * This will open Google Forms in a new tab where you can fill out your team registration details.
-            </p>
+            </p> */}
           </div>
 
           {/* Contact Information */}
@@ -73,7 +81,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-gray-900">Tournament Venue</h3>
                   <p className="text-gray-600">Koyla Veer Baba Cricket Ground</p>
-                  <p className="text-gray-600">Durjanpur, Bairia, Ballia (Uttar Pradesh)</p>
+                  <p className="text-gray-600">Durjanpur, Bairia, Ballia, Uttar Pradesh. Pin : 277208</p>
                 </div>
               </div>
             </div>

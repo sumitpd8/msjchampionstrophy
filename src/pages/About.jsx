@@ -19,12 +19,12 @@ const About = () => {
     { name: 'Bholi Sharma', role: 'Vice President', photo: '/images/OrganizingCommitteeMembers/.jpg' },
     { name: 'Ranjan Verma', role: 'Treasurer', photo: '/images/OrganizingCommitteeMembers/RanjanVerma.jpg' },
     { name: 'Yashvendra Pratap Singh', role: 'Secretary', photo: '/images/OrganizingCommitteeMembers/YashvendraPratapSingh.jpg' },
-    { name: 'Mukesh Yadav', role: 'Joint Secretary', photo: '/images/OrganizingCommitteeMembers/.jpg' },
+    { name: 'Mukesh Yadav', role: 'Joint Secretary', photo: '/images/OrganizingCommitteeMembers/MukeshYadav.png' },
     
   ];
 
    const technicalSupport = [
-    { name: 'Sumit Prasad', role: 'Developer', photo: '/images/technicalSupport/SumitPrasad.png' },
+    { name: 'Sumit Prasad', role: 'Developer', photo: '/images/technicalSupport/SumitPrasad1.png' },
     { name: 'Akash Kumar Sinha',  role: 'Developer',photo: '/images/technicalSupport/AkashKumarSinha.jpg' },
     { name: 'Sohom Roy', role: 'Developer', photo: '/images/technicalSupport/SohomRoy.jpg' },
   ];
@@ -78,7 +78,7 @@ const About = () => {
         </div>
 
         {/* In Sacred Memory Section */}
-        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-8 mb-16">
+        <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-2 mb-10">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">In Sacred Memory</h2>
             <div className="flex flex-col items-center">
@@ -190,7 +190,7 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6">Tournament Venue</h2>
             <div className="max-w-2xl mx-auto">
               <h3 className="text-2xl font-semibold mb-4">Koyla Veer Baba Cricket Ground</h3>
-              <p className="text-lg mb-4">Durjanpur, Bairia, Ballia (Uttar Pradesh)</p>
+              <p className="text-lg mb-4">Durjanpur, Bairia, Ballia, Uttar Pradesh. Pin : 277208</p>
               <p className="text-lg">
                 This venue is not only a hub for local sports enthusiasts but also symbolizes 
                 a confluence of sports, culture, and traditional values.

@@ -102,7 +102,7 @@ const Notice = () => {
       'Team must have minimum 11 players and maximum 15 players',
       'Team name and captain details',
       'A valid ID proof (Like Aadhar card, Pan Card etc.)',
-      'Contact Information(Like Email, Mobie no. etc.)',
+      'Contact Information(Like Email, Mobile no. etc.)',
       'Registration Fee Payment & Confirmation(Mandatory)',
     ]
   };

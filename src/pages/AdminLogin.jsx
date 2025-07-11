@@ -35,7 +35,11 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-100">
+    // <div className="min-h-screen flex justify-center items-center bg-blue-400">
+    <div
+      className="min-h-screen bg-cover bg-center flex justify-center items-center"
+      style={{ backgroundImage: "url('/images/Gallary/Background4.jpg')" }}
+    >  
       <form
         onSubmit={handleSubmit}
         className="bg-white p-8 rounded shadow-md w-full max-w-md"

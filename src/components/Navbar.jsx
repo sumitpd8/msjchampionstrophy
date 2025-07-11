@@ -21,9 +21,9 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50 border-b border-blue-100 w-screen">
-      <div className="w-screen mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="bg-white shadow-md sticky top-0 z-50 border-b border-blue-100 w-full">
+      <div className="max-w-full-xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="flex justify-between items-center h-14">
           
           {/* Logo Section */}
           <div className="flex items-center flex-shrink-0">
@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center space-x-4">
+          <div className="hidden md:flex md:items-center gap-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}

@@ -11,25 +11,24 @@ import { Trophy, MapPin, Phone, Clock, Mail } from 'lucide-react';
  */
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-blue-700 via-blue-700 to-blue-700 text-white py-12">
+    <footer className="bg-gradient-to-br from-blue-700 via-blue-700 to-blue-700 text-white py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Tournament Info */}
-          <div className="col-span-1 md:col-span-2 lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-2 rounded-full shadow-lg">
-                <Trophy className="h-6 w-6 text-white" />
-              </div>
-              <span className="font-bold text-lg text-yellow-400">MSJ Champions Trophy</span>
-            </div>
-            <p className="text-blue-100 text-sm leading-relaxed">
-              Maa Shayar Jagdamba Champions Trophy - A prestigious cricket tournament 
-              dedicated to promoting rural sports talents and carrying forward the 
-              spirit of Mukhdev Bhagat Ji.
-            </p>
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-yellow-400">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="/" className="text-sm hover:text-blue-400 transition-colors">Home</a></li>
+              <li><a href="/about" className="text-sm hover:text-blue-400 transition-colors">About Us</a></li>
+              <li><a href="/contact" className="text-sm hover:text-blue-400 transition-colors">Register Team</a></li>
+              <li><a href="/notice" className="text-sm hover:text-blue-400 transition-colors">Notice Board</a></li>
+              <li><a href="/gallery" className="text-sm hover:text-blue-400 transition-colors">Gallery</a></li>
+              <li><a href="/sponsorship" className="text-sm hover:text-blue-400 transition-colors">Sponsorship</a></li>
+            </ul>
           </div>
 
-          {/* Contact Information */}
+
+        {/* Contact Information */}
           <div>
             <h3 className="font-semibold text-lg mb-4 text-yellow-400">Contact Us</h3>
             <div className="space-y-3">
@@ -60,6 +59,7 @@ const Footer = () => {
             </div>
           </div>
 
+
           {/* Venue Information */}
           <div>
             <h3 className="font-semibold text-lg mb-4 text-yellow-400">Venue</h3>
@@ -73,19 +73,25 @@ const Footer = () => {
             </div>
           </div>
 
-           {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-yellow-400">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="/" className="text-sm hover:text-blue-400 transition-colors">Home</a></li>
-              <li><a href="/about" className="text-sm hover:text-blue-400 transition-colors">About Us</a></li>
-              <li><a href="/contact" className="text-sm hover:text-blue-400 transition-colors">Register Team</a></li>
-              <li><a href="/notice" className="text-sm hover:text-blue-400 transition-colors">Notice Board</a></li>
-              <li><a href="/gallery" className="text-sm hover:text-blue-400 transition-colors">Gallery</a></li>
-              <li><a href="/sponsorship" className="text-sm hover:text-blue-400 transition-colors">Sponsorship</a></li>
-            </ul>
+
+          {/* Tournament Info */}
+          <div className="col-span-1 md:col-span-2 lg:col-span-1">
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 p-1 rounded-full shadow-lg">
+                <Trophy className="h-6 w-6 text-white" />
+              </div>
+              <span className="font-bold text-lg text-yellow-400">MSJ Champions Trophy</span>
+            </div>
+            <p className="text-blue-100 text-sm leading-relaxed">
+              Maa Shayar Jagdamba Champions Trophy - A prestigious cricket tournament 
+              dedicated to promoting rural sports talents and carrying forward the 
+              spirit of Mukhdev Bhagat Ji.
+            </p>
           </div>
 
+          
+
+          
           
         </div>
 

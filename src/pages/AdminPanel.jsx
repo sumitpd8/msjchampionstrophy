@@ -38,7 +38,7 @@ const AdminPanel = () => {
   return (
     <div className="p-4 sm:p-8">
       <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
-        <h1 className="text-2xl sm:text-3xl font-bold">Admin Panel</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold items-center">Admin Panel</h1>
         <button
           onClick={() => {
             localStorage.removeItem('adminToken');
