@@ -137,7 +137,7 @@ const handlePayment = async () => {
   // ✅ If errors exist, show alert and stop
   if (Object.keys(validationErrors).length > 0) {
     const messages = Object.values(validationErrors).join("\n");
-    alert("❌ Please complete the form before payment:\n\n" + messages);
+    alert("⚠️ Please complete the form before payment:\n\n" + messages);
     return;
   }
 
@@ -145,10 +145,13 @@ const handlePayment = async () => {
   // ✅ Load Razorpay
   const isScriptLoaded = await loadRazorpayScript();
   if (!isScriptLoaded) {
-    alert("❌ Failed to load Razorpay SDK. Please check your internet connection.");
+    alert("Unable to load Razorpay SDK. Please check your internet connection.");
     return;
   }
 
+
+
+  
 
   // Step 1: Create Razorpay Order
   let orderData;
@@ -162,7 +165,7 @@ const handlePayment = async () => {
     orderData = await res.json();
 
     if (!orderData || !orderData.id) {
-      alert("❌ Failed to create order. Check server logs.");
+      alert("Error creating order. Please try again later.");
       return;
     }
   } catch (error) {
@@ -209,7 +212,7 @@ const handlePayment = async () => {
         } else {
           const errorData = await submitRes.json();
           console.error("❌ Backend Error:", errorData);
-          alert("❌ Payment succeeded but failed to save data. Please contact support.");
+          alert("Payment successful, but we couldn't save your data. Please contact support.");
         }
       } catch (err) {
         console.error("❌ Submission Error:", err);
