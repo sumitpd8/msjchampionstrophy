@@ -112,12 +112,43 @@ const loadRazorpayScript = () => {
 };
 
 
+// const handlePayment = async () => {
+//   const isScriptLoaded = await loadRazorpayScript();
+//   if (!isScriptLoaded) {
+//     alert("❌ Failed to load Razorpay SDK. Please check your internet connection.");
+//     return;
+//   }
+
 const handlePayment = async () => {
+  // ✅ Custom validation before payment
+  const validationErrors = {};
+
+  if (!formData.teamName.trim()) validationErrors.teamName = "Team Name is required.";
+  if (!formData.captainName.trim()) validationErrors.captainName = "Captain Name is required.";
+  if (!/^\d{10}$/.test(formData.captainPhone)) validationErrors.captainPhone = "Valid 10-digit Captain Phone is required.";
+  if (!formData.address.trim()) validationErrors.address = "Address is required.";
+
+  // ✅ Check minimum 11 valid players
+  const validPlayers = formData.players.filter(p => p.name.trim() && p.role.trim());
+  if (validPlayers.length < 11) {
+    validationErrors.players = "At least 11 players with name and role are required.";
+  }
+
+  // ✅ If errors exist, show alert and stop
+  if (Object.keys(validationErrors).length > 0) {
+    const messages = Object.values(validationErrors).join("\n");
+    alert("❌ Please complete the form before payment:\n\n" + messages);
+    return;
+  }
+
+
+  // ✅ Load Razorpay
   const isScriptLoaded = await loadRazorpayScript();
   if (!isScriptLoaded) {
     alert("❌ Failed to load Razorpay SDK. Please check your internet connection.");
     return;
   }
+
 
   // Step 1: Create Razorpay Order
   let orderData;
@@ -263,7 +294,7 @@ const handlePayment = async () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input name="captainName" value={formData.captainName} onChange={handleChange} placeholder="Captain Name *" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
-              <input name="captainPhone" value={formData.captainPhone} onChange={handleChange} placeholder="Phone" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
+              <input name="captainPhone" value={formData.captainPhone} onChange={handleChange} placeholder="Phone *" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
               <input name="captainEmail" value={formData.captainEmail} onChange={handleChange} placeholder="Email" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
               <input name="viceCaptain" value={formData.viceCaptain} onChange={handleChange} placeholder="Vice Captain" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
             </div>
@@ -275,11 +306,11 @@ const handlePayment = async () => {
               <MapPin className="h-6 w-6 mr-3" />
               Address Information
             </h3>
-            <textarea name="address" value={formData.address} onChange={handleChange} rows="3" placeholder="Full address" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
+            <textarea name="address" value={formData.address} onChange={handleChange} rows="3" placeholder="Full address *" className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <input name="city" value={formData.city} onChange={handleChange} placeholder="City" className="px-4 py-3 border-2 border-blue-200 rounded-lg" />
-              <input name="state" value={formData.state} onChange={handleChange} placeholder="State" className="px-4 py-3 border-2 border-blue-200 rounded-lg" />
-              <input name="pincode" value={formData.pincode} onChange={handleChange} placeholder="Pincode" className="px-4 py-3 border-2 border-blue-200 rounded-lg" />
+              <input name="state" value={formData.state} onChange={handleChange} placeholder="State *" className="px-4 py-3 border-2 border-blue-200 rounded-lg" />
+              <input name="pincode" value={formData.pincode} onChange={handleChange} placeholder="Pincode *" className="px-4 py-3 border-2 border-blue-200 rounded-lg" />
             </div>
           </div>
 
@@ -293,8 +324,8 @@ const handlePayment = async () => {
             <div className="space-y-4">
               {formData.players.map((player, index) => (
                 <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center bg-blue-50 p-4 rounded-lg border border-blue-200">
-                  <input type="text" value={player.name} onChange={(e) => handlePlayerChange(index, 'name', e.target.value)} placeholder="Player Name" className="px-4 py-2 border-2 border-blue-200 rounded-lg" />
-                  <input type="text" value={player.role} onChange={(e) => handlePlayerChange(index, 'role', e.target.value)} placeholder="Role (e.g. Batsman)" className="px-4 py-2 border-2 border-blue-200 rounded-lg" />
+                  <input type="text" value={player.name} onChange={(e) => handlePlayerChange(index, 'name', e.target.value)} placeholder="Player Name *" className="px-4 py-2 border-2 border-blue-200 rounded-lg" />
+                  <input type="text" value={player.role} onChange={(e) => handlePlayerChange(index, 'role', e.target.value)} placeholder="Role (e.g. Batsman )" className="px-4 py-2 border-2 border-blue-200 rounded-lg" />
                   <button onClick={() => removePlayer(index)} className="text-red-600 hover:text-red-800 flex items-center justify-center">
                     <Trash2 className="h-5 w-5 mr-1" />
                     Remove

@@ -89,10 +89,7 @@ const Footer = () => {
             </p>
           </div>
 
-          
-
-          
-          
+        
         </div>
 
         {/* Bottom Section */}
