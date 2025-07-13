@@ -317,10 +317,10 @@ const Matches = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-100 via-blue-800 to-blue-700 text-white py-16 relative overflow-hidden">
+      <section className="bg-gradient-to-br  text-white py-16 relative overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
-          style={{ backgroundImage: `url(/images/Gallary/15.jpg)` }}>
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
+          style={{ backgroundImage: `url(/images/Gallary/Home.png)` }}>
           </div>
         {/* Cricket Pattern Background */}
         <div className="absolute inset-0 opacity-10">

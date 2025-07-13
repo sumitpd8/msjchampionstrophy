@@ -1,5 +1,6 @@
 import React from 'react';
-import { Trophy, MapPin, Phone, Clock, Mail } from 'lucide-react';
+import { Trophy, MapPin, Phone, Clock, Mail, Instagram, Facebook, MessageCircle } from 'lucide-react';
+
 
 /**
  * Footer component with contact information and tournament details
@@ -11,7 +12,7 @@ import { Trophy, MapPin, Phone, Clock, Mail } from 'lucide-react';
  */
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-blue-700 via-blue-700 to-blue-700 text-white py-4">
+    <footer className="bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 text-white py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Quick Links */}
@@ -31,7 +32,7 @@ const Footer = () => {
         {/* Contact Information */}
           <div>
             <h3 className="font-semibold text-lg mb-4 text-yellow-400">Contact Us</h3>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-300" />
                 <a href="tel:+919120186401" className="text-sm text-blue-100 hover:text-white transition-colors">
@@ -51,12 +52,25 @@ const Footer = () => {
 
               <div className="flex items-center space-x-2">
               <Clock className="h-4 w-4 text-blue-300" />
-              <span className="text-sm text-blue-100">8:00 AM - 11:00 PM</span>
+              <span className="text-sm text-blue-100">8:00 AM - 11:00 PM (Available for inquiries)</span>
             </div>
-            <p className="text-xs text-blue-200 mt-4">
-              Available for inquiries, team registrations, and tournament information.
-            </p>
+            {/* <div className="space-y-6"></div>
+            <p className="text-xs text-blue-200 mt-6">
+              Available for inquiries
+            </p> */}
+            
             </div>
+            {/* <div className="flex space-x-6">
+              <a href="https://instagram.com/msjchampionstrophy" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a href="https://facebook.com/msjchampionstrophy" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a href="https://wa.me/916307326892" className="text-gray-400 hover:text-green-400 transition-colors">
+                <MessageCircle className="h-4 w-4" />
+              </a>
+            </div> */}
           </div>
 
 
@@ -87,13 +101,25 @@ const Footer = () => {
               dedicated to promoting rural sports talents and carrying forward the 
               spirit of Mukhdev Bhagat Ji.
             </p>
+            </div>
+            <div className="flex space-x-6">
+              <a href="https://instagram.com/msjchampionstrophy" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a href="https://facebook.com/msjchampionstrophy" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a href="https://wa.me/916307326892" className="text-gray-400 hover:text-green-400 transition-colors">
+                <MessageCircle className="h-4 w-4" />
+              </a>
+            </div>
           </div>
-
+          
+          
         
-        </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-blue-700 mt-8 pt-8 text-center">
+        <div className="border-t border-blue-700 mt-6 pt-6 text-center">
           <p className="text-sm text-white-200">
             © 2025 Maa Shayar Jagdamba Champions Trophy. Organized by Maa Shayar Jagdamba Seva Sansthan.
           </p>

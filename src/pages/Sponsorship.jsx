@@ -15,42 +15,40 @@ const Sponsorship = () => {
 
   const sponsorshipPackages = [
     {
-      name: 'Title Sponsor',
-      price: '₹50,000',
-      color: 'from-yellow-500 to-yellow-600',
+       name: 'Platinum',
+      price: '₹20,000+',
+      icon: <Award className="h-8 w-8" />,
+      color: 'from-gray-400 to-gray-600',
       benefits: [
-        'Tournament named after your brand',
-        'Logo on all promotional materials',
-        'Prime position branding at venue',
-        'Social media promotion',
-        'Trophy presentation rights',
-        'VIP hospitality for 10 guests'
-      ]
-    },
-    {
-      name: 'Presenting Sponsor',
-      price: '₹35,000',
-      color: 'from-blue-600 to-blue-700',
-      benefits: [
-        'Co-branding with tournament',
         'Logo on team jerseys',
-        'Boundary advertising boards',
-        'Digital marketing inclusion',
-        'Award ceremony participation',
-        'VIP hospitality for 6 guests'
+        'Main banner at venue',
+        'Social media promotions',
+        'Prize distribution ceremony mention',
+        'Dedicated social media posts',
+        'Tournament brochure feature'
       ]
     },
     {
-      name: 'Associate Sponsor',
-      price: '₹45,000',
-      color: 'from-blue-500 to-blue-600',
+      name: 'Gold',
+      price: '₹10000 +',
+      icon: <Star className="h-8 w-8" />,
+      color: 'from-yellow-400 to-yellow-600',
       benefits: [
-        'Logo on promotional materials',
-        'Ground advertising space',
+        'Name on  tournament banners',
         'Social media mentions',
-        'Program booklet advertisement',
-        'Certificate of appreciation',
-        'VIP hospitality for 4 guests'
+        'Prize ceremony acknowledgment',
+        'VIP hospitality during matches.(reserved seating,refreshments etc.)'
+      ]
+    },
+    {
+      name: 'Silver',
+      price: '₹10,000',
+      color: 'from-gray-300 to-gray-500',
+      benefits: [
+        'Social media shoutouts',
+        'Tournament brochure mention',
+        'Website listing',
+        'Certificate of appreciation'
       ]
     }
   ];

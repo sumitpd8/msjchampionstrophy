@@ -16,7 +16,7 @@ const About = () => {
 
   const committeeMembers = [
     { name: 'Sudhir Gond', role: 'President', photo: '/images/OrganizingCommitteeMembers/sudhirgond.jpg' },
-    { name: 'Bholi Sharma', role: 'Vice President', photo: '/images/OrganizingCommitteeMembers/.jpg' },
+    { name: 'Bholi Sharma', role: 'Vice President', photo: '/images/OrganizingCommitteeMembers/BholiSharma.png' },
     { name: 'Ranjan Verma', role: 'Treasurer', photo: '/images/OrganizingCommitteeMembers/RanjanVerma.jpg' },
     { name: 'Yashvendra Pratap Singh', role: 'Secretary', photo: '/images/OrganizingCommitteeMembers/YashvendraPratapSingh.jpg' },
     { name: 'Mukesh Yadav', role: 'Joint Secretary', photo: '/images/OrganizingCommitteeMembers/MukeshYadav.png' },

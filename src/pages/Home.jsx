@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Trophy, Users, Medal, Calendar, MapPin, ChevronRight, X, Phone, Clock, Star, Plus, ArrowRight, Target, Crown } from 'lucide-react';
+import { Trophy, Users, Medal, Calendar, MapPin, ChevronRight, X, Phone, Clock, Star, Plus, ArrowRight, Target, Crown, Badge, Award, IndianRupee } from 'lucide-react';
 
 const Home = () => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
@@ -79,10 +79,13 @@ const Home = () => {
     // registrationDeadline: '2026-01-15',
     
     venue: 'Koyla Veer Baba Cricket Ground, Ballia',
-    registrationFee: '₹5100 per team',
-    prizePool: '₹51,000',
-    runnerUpTeam: '₹21,000',
-    categories: ['Open Category', 'No minimum and maximum age required']
+    registrationFee: '₹11,000 per team',
+    prizePool: '₹70,000',
+    runnerUpTeam: '₹35,000',
+    // categories: ['Open Category', 'No minimum and maximum age required']
+    playerOfTheTournament: '₹15,000',
+    bestBatsman: '₹5,100',
+    bestBowler: '₹5,100'
   };
 
    // Cricket scoreboard data with custom team logos
@@ -280,8 +283,8 @@ const Home = () => {
       <section className="relative bg-gradient-to-r from-white via-white to-white text-white py-10">
         {/* Stadium Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
-          style={{ backgroundImage: `url(/images/Gallary/Background3.jpg)` }}>
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+          style={{ backgroundImage: `url(/images/Gallary/Background1.png)` }}>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -309,7 +312,159 @@ const Home = () => {
           </div>
         </div>
       </section>  
-             
+
+
+      {/* Stats Section */}
+      <section className="py-8 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl font-bold text-center mb-10 text-gray-800">
+            Tournament Summary for 2026
+        </h2>
+
+    {/* ✅ Change starts here */}
+    <div className="flex flex-wrap justify-center items-center gap-14">
+      {/* Card 1 */}
+      <div className="text-center">
+        <div className="bg-gradient-to-r from-indigo-100 to-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+          <Users className="h-8 w-8 text-indigo-600" />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">₹11,000</h3>
+        <p className="text-gray-600">Entry Fee</p>
+      </div>
+
+      {/* Card 2 */}
+      <div className="text-center">
+        <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+          <Trophy className="h-8 w-8 text-blue-600" />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">₹70,000</h3>
+        <p className="text-gray-600">Winner Prize Money</p>
+      </div>
+
+      {/* Card 3 */}
+      <div className="text-center">
+        <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+          <Award className="h-8 w-8 text-blue-600" />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">₹35,000</h3>
+        <p className="text-gray-600">Runner-up Prize</p>
+      </div>
+
+      {/* Card 4 */}
+      <div className="text-center">
+        <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+          <Target className="h-8 w-8 text-blue-600" />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">₹15,000</h3>
+        <p className="text-gray-600">Player of the Tournament</p>
+      </div>
+
+      {/* Card 5 */}
+      <div className="text-center">
+        <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+          <IndianRupee className="h-8 w-8 text-blue-600" />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">₹5,100</h3>
+        <p className="text-gray-600">Best Batsman</p>
+      </div>
+
+      {/* Card 6 */}
+      <div className="text-center">
+        <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+          <IndianRupee className="h-8 w-8 text-blue-600" />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">₹5,100</h3>
+        <p className="text-gray-600">Best Bowler</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* <section className="py-10 bg-indigo-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-center mb-10 text-gray-800">Tournament Summary for 2026</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-indigo-100 to-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-indigo-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">₹11,000</h3>
+              <p className="text-gray-600">Entry Fee</p>
+            </div>
+
+
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Trophy className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">₹70,000</h3>
+              <p className="text-gray-600">Winner Prize Money</p>
+            </div>
+
+            
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Award className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">₹35,000</h3>
+              <p className="text-gray-600">Runner-up Prize </p>
+            </div>
+
+
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">₹15,000</h3>
+              <p className="text-gray-600">Player of the Tournament</p>
+            </div>
+
+
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <IndianRupee className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">₹5,100</h3>
+              <p className="text-gray-600">Best Batsman</p>
+            </div>
+
+
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <IndianRupee className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">₹5,100</h3>
+              <p className="text-gray-600">Best Bowler</p>
+            </div> */}
+
+
+            {/* <div className="text-center">
+              <div className="bg-gradient-to-r from-indigo-100 to-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-indigo-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">16+</h3>
+              <p className="text-gray-600">Teams Participated</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-blue-100 to-cyan-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Calendar className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Annual</h3>
+              <p className="text-gray-600">Tournament</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-gradient-to-r from-indigo-100 to-purple-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <MapPin className="h-8 w-8 text-indigo-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">1</h3>
+              <p className="text-gray-600">Premium Venue</p>
+            </div> */}
+
+          {/* </div>
+        </div>
+      </section> */}
+
+
       {/* Upcoming Tournament 2026 Section */}
       <section className="py-16 bg-gradient-to-r from-indigo-200 via-indigo-500 to-indigo-200">
         
@@ -381,7 +536,18 @@ const Home = () => {
                         <Medal className="h-5 w-5 text-green-600" />
                         <span className="text-gray-600">Runner up Team: <strong className="text-gray-900">{upcomingTournament.runnerUpTeam}</strong></span>
                       </div>
-                      <div className="mt-6">
+
+                      <div className="flex items-center space-x-3">
+                        <Medal className="h-5 w-5 text-green-600" />
+                        <span className="text-gray-600">Best Batsman:<strong className="text-gray-900">{upcomingTournament.bestBatsman}</strong></span>
+                      </div>
+
+                      <div className="flex items-center space-x-3">
+                        <Medal className="h-5 w-5 text-green-600" />
+                        <span className="text-gray-600">Best Bowler:<strong className="text-gray-900">{upcomingTournament.bestBowler}</strong></span>
+                      </div>
+
+                      {/* <div className="mt-6">
                         <h5 className="font-semibold text-gray-900 mb-3">Categories</h5>
                         <ul className="space-y-2">
                           {upcomingTournament.categories.map((category, index) => (
@@ -391,7 +557,9 @@ const Home = () => {
                             </li>
                           ))}
                         </ul>
-                      </div>
+                      </div> */}
+
+
                     </div>
                   </div>
                 </div>
@@ -615,7 +783,7 @@ const Home = () => {
             <Star className="h-12 w-12 text-white" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Become Our Sponsor
+            To Become Our Sponsor
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             Join us in promoting rural cricket talent. Partner with MSJ Champions Trophy 2026 
@@ -641,48 +809,14 @@ const Home = () => {
         </div>
       </section>
       
-      {/* Stats Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Trophy className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">₹51,000</h3>
-              <p className="text-gray-600">Prize Money</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-gradient-to-r from-indigo-100 to-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-indigo-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">16+</h3>
-              <p className="text-gray-600">Teams Participated</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-gradient-to-r from-blue-100 to-cyan-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Calendar className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Annual</h3>
-              <p className="text-gray-600">Tournament</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-gradient-to-r from-indigo-100 to-purple-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-8 w-8 text-indigo-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">1</h3>
-              <p className="text-gray-600">Premium Venue</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Tournament Photos Section with Enhanced Viewer */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-8 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Tournament Highlights
+              Tournament Highlights (2025)
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Glimpses from our prestigious cricket tournament showcasing the spirit of competition and community

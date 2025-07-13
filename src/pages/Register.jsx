@@ -240,9 +240,16 @@ const handlePayment = async () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div
+      className="min-h-screen bg-gradient-to-b from-blue-50 to-white bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/public/images/Gallary/')" }}
+      >
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-16 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-white-100 text-white py-16 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
+          style={{ backgroundImage: `url(/images/Gallary/TeamRegistration.png)` }}>
+        </div>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 border-4 border-white rounded-full"></div>
           <div className="absolute top-32 right-20 w-24 h-24 border-4 border-yellow-400 rounded-full"></div>
@@ -254,17 +261,17 @@ const handlePayment = async () => {
             <Users className="h-16 w-16 text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Team Registration</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-blue-100">
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white">
             Register your team for MSJ Champions Trophy 2026 - Flexible registration process
           </p>
         </div>
       </section>
 
       {/* Progress Steps */}
-      <section className="py-8 bg-white shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-1 bg-indigo shadow-sm">
+        <div className="max-w-4xl mx-auto px-4 sm:px-4 lg:px-6">
           <div className="flex items-center justify-center space-x-8">
-            <div className="flex items-center text-blue-600">
+            <div className="flex items-center text-black-900">
               <span className="text-2xl md:text-3xl font-bold mb-6">Fillup and Pay</span>
             </div>
           </div>
@@ -344,6 +351,7 @@ const handlePayment = async () => {
               </button>
             </div>
           </div>
+          
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 justify-center mt-8">
@@ -374,8 +382,39 @@ const handlePayment = async () => {
     </div>
   </div>
 )}
-
+      {/* Contact for Support */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Need Help?</h2>
+          <p className="text-lg text-gray-600 mb-8">
+            For any registration queries, contact our support team
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="tel:+916307326892"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Call: +91 63073 26892
+            </a>
+            <a
+              href="mailto:msjchampionstrophy@gmail.com"
+              className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Email Support
+            </a>
+            <a
+              href="https://wa.me/6307326892"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
+    
 
     
   );

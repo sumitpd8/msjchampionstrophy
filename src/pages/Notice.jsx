@@ -91,12 +91,14 @@ const Notice = () => {
     // registrationDeadline: '2026-01-15',
     
     venue: 'Koyla Veer Baba Cricket Ground, Ballia',
-    registrationFee: '₹5100 per team',
-    prizePool: '₹51,000',
-
+    registrationFee: '₹11,000 per team',
+    prizePool: '₹70,000',
+    runnerUpTeam: '₹35,000',
     // maxTeams: 10,
+    playerOfTheTournament: '₹15,000',
+    bestBatsman: '₹5,100',
+    bestBowler: '₹5,100',
 
-    runnerUpTeam: '₹21,000',
     categories: ['Open Category', 'No minimum and maximum age required'],
     eligibility: [
       'Team must have minimum 11 players and maximum 15 players',
@@ -197,6 +199,21 @@ const Notice = () => {
                       <div className="flex items-center space-x-3">
                         <Medal className="h-5 w-5 text-green-600" />
                         <span className="text-gray-600">Runner up Team: <strong className="text-gray-900">{upcomingTournament.runnerUpTeam}</strong></span>
+                      </div>
+
+                      <div className="flex items-center space-x-3">
+                        <Medal className="h-5 w-5 text-green-600" />
+                        <span className="text-gray-600">Player of the Tournament: <strong className="text-gray-900">{upcomingTournament.playerOfTheTournament}</strong></span>
+                      </div>
+
+                      <div className="flex items-center space-x-3">
+                        <Medal className="h-5 w-5 text-green-600" />
+                        <span className="text-gray-600">Best Batsman: <strong className="text-gray-900">{upcomingTournament.bestBatsman}</strong></span>
+                      </div>
+
+                      <div className="flex items-center space-x-3">
+                        <Medal className="h-5 w-5 text-green-600" />
+                        <span className="text-gray-600">Best Bowler: <strong className="text-gray-900">{upcomingTournament.bestBowler}</strong></span>
                       </div>
 
                     </div>
