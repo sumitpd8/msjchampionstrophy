@@ -20,6 +20,7 @@ const About = () => {
     { name: 'Ranjan Verma', role: 'Treasurer', photo: '/images/OrganizingCommitteeMembers/RanjanVerma.jpg' },
     { name: 'Yashvendra Pratap Singh', role: 'Secretary', photo: '/images/OrganizingCommitteeMembers/YashvendraPratapSingh.jpg' },
     { name: 'Mukesh Yadav', role: 'Joint Secretary', photo: '/images/OrganizingCommitteeMembers/MukeshYadav.png' },
+    { name: 'Shakti Singh Yadav', role: 'Event Manager', photo: '/images/OrganizingCommitteeMembers/ShaktiSinghYadav.jpg' },
     
   ];
 
