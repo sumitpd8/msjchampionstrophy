@@ -66,6 +66,9 @@ const Home = () => {
     }
   ];
 
+
+  
+
   // Upcoming tournament data - 2026 only
   const upcomingTournament = {
     id: 1,
@@ -243,6 +246,144 @@ const Home = () => {
     );
   };
 
+  const tournamentPoints = [
+    { 
+      team: 'Durjanpur Warriors', 
+      logo: '🏏', 
+      color: 'from-blue-600 to-blue-800',
+      matches: 4, 
+      wins: 3, 
+      losses: 1, 
+      points: 6, 
+      runRate: '+1.25' 
+    },
+    { 
+      team: 'Ballia Blazers', 
+      logo: '⚡', 
+      color: 'from-yellow-500 to-orange-600',
+      matches: 4, 
+      wins: 3, 
+      losses: 1, 
+      points: 6, 
+      runRate: '+0.85' 
+    },
+    { 
+      team: 'Nai Basti Knights', 
+      logo: '⚔️', 
+      color: 'from-purple-600 to-purple-800',
+      matches: 4, 
+      wins: 2, 
+      losses: 2, 
+      points: 4, 
+      runRate: '+0.45' 
+    },
+    { 
+      team: 'Bairia Bullets', 
+      logo: '🎯', 
+      color: 'from-red-600 to-red-800',
+      matches: 4, 
+      wins: 2, 
+      losses: 2, 
+      points: 4, 
+      runRate: '-0.32' 
+    },
+    { 
+      team: 'UP Challengers', 
+      logo: '🔥', 
+      color: 'from-green-600 to-green-800',
+      matches: 4, 
+      wins: 0, 
+      losses: 4, 
+      points: 0, 
+      runRate: '-1.85' 
+    },
+  ];
+
+  const bestBatsmen = [
+    { 
+      name: 'Rajesh Kumar', 
+      team: 'Durjanpur Warriors', 
+      logo: '🏏',
+      color: 'from-blue-600 to-blue-800',
+      runs: 245, 
+      average: 61.25 
+    },
+    { 
+      name: 'Amit Singh', 
+      team: 'Ballia Blazers', 
+      logo: '⚡',
+      color: 'from-yellow-500 to-orange-600',
+      runs: 198, 
+      average: 49.5 
+    },
+    { 
+      name: 'Suresh Yadav', 
+      team: 'Nai Basti Knights', 
+      logo: '⚔️',
+      color: 'from-purple-600 to-purple-800',
+      runs: 176, 
+      average: 44.0 
+    },
+    { 
+      name: 'Vikash Gupta', 
+      team: 'Bairia Bullets', 
+      logo: '🎯',
+      color: 'from-red-600 to-red-800',
+      runs: 165, 
+      average: 41.25 
+    },
+    { 
+      name: 'Ravi Sharma', 
+      team: 'UP Challengers', 
+      logo: '🔥',
+      color: 'from-green-600 to-green-800',
+      runs: 132, 
+      average: 33.0 
+    },
+  ];
+
+  const bestBowlers = [
+    { 
+      name: 'Mohan Prasad', 
+      team: 'Ballia Blazers', 
+      logo: '⚡',
+      color: 'from-yellow-500 to-orange-600',
+      wickets: 12, 
+      average: 8.5 
+    },
+    { 
+      name: 'Deepak Verma', 
+      team: 'Durjanpur Warriors', 
+      logo: '🏏',
+      color: 'from-blue-600 to-blue-800',
+      wickets: 10, 
+      average: 9.2 
+    },
+    { 
+      name: 'Santosh Kumar', 
+      team: 'Nai Basti Knights', 
+      logo: '⚔️',
+      color: 'from-purple-600 to-purple-800',
+      wickets: 9, 
+      average: 10.8 
+    },
+    { 
+      name: 'Ajay Singh', 
+      team: 'Bairia Bullets', 
+      logo: '🎯',
+      color: 'from-red-600 to-red-800',
+      wickets: 8, 
+      average: 12.0 
+    },
+    { 
+      name: 'Ramesh Yadav', 
+      team: 'UP Challengers', 
+      logo: '🔥',
+      color: 'from-green-600 to-green-800',
+      wickets: 6, 
+      average: 15.3 
+    },
+  ];
 
   const openPhoto = (photo, index) => {
     setSelectedPhoto(photo);
@@ -773,6 +914,125 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Live Points Tables */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Live Points Tables</h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Tournament Points Table */}
+            <div className="bg-gradient-to-br from-indigo-50 to-blue-100 rounded-xl shadow-2xl p-6 border border-blue-200">
+              <div className="flex items-center mb-6">
+                <Trophy className="h-8 w-8 text-yellow-500 mr-3" />
+                <h3 className="text-2xl font-bold text-indigo-800">Points Table</h3>
+              </div>
+              <div className="space-y-3">
+                {[...tournamentPoints].sort((a, b) => b.points - a.points).map((team, index) => (
+                  <div key={index} className={`bg-gradient-to-r ${team.color} rounded-lg p-4 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-3">
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg ${
+                          index === 0 ? 'bg-yellow-500 ring-4 ring-yellow-300' : 
+                          index === 1 ? 'bg-gray-400 ring-4 ring-gray-300' : 
+                          index === 2 ? 'bg-orange-500 ring-4 ring-orange-300' : 
+                          'bg-white bg-opacity-20'
+                        }`}>
+                          {index + 1}
+                        </div>
+                        <div className="text-3xl">{team.logo}</div>
+                        <div>
+                          <div className="font-bold text-lg">{team.team}</div>
+                          <div className="text-sm opacity-90">
+                            M: {team.matches} | W: {team.wins} | L: {team.losses}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-bold">{team.points}</div>
+                        <div className={`text-sm font-semibold ${
+                          team.runRate.startsWith('+') ? 'text-green-200' : 'text-red-200'
+                        }`}>
+                          NRR: {team.runRate}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Best Batsman Leaderboard */}
+            <div className="bg-gradient-to-br from-emerald-50 to-green-100 rounded-xl shadow-2xl p-6 border border-green-200">
+              <div className="flex items-center mb-6">
+                <Target className="h-8 w-8 text-emerald-600 mr-3" />
+                <h3 className="text-2xl font-bold text-emerald-800">Top Batsmen</h3>
+              </div>
+              <div className="space-y-3">
+                {bestBatsmen.map((player, index) => (
+                  <div key={index} className={`bg-gradient-to-r ${player.color} rounded-lg p-4 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-3">
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg ${
+                          index === 0 ? 'bg-yellow-500 ring-4 ring-yellow-300' : 
+                          index === 1 ? 'bg-gray-400 ring-4 ring-gray-300' : 
+                          index === 2 ? 'bg-orange-500 ring-4 ring-orange-300' : 
+                          'bg-white bg-opacity-20'
+                        }`}>
+                          {index + 1}
+                        </div>
+                        <div className="text-2xl">{player.logo}</div>
+                        <div>
+                          <div className="font-bold text-lg">{player.name}</div>
+                          <div className="text-sm opacity-90">{player.team}</div>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-bold">{player.runs}</div>
+                        <div className="text-sm opacity-90">Avg: {player.average}</div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Best Bowler Leaderboard */}
+            <div className="bg-gradient-to-br from-rose-50 to-red-100 rounded-xl shadow-2xl p-6 border border-red-200">
+              <div className="flex items-center mb-6">
+                <Award className="h-8 w-8 text-red-600 mr-3" />
+                <h3 className="text-2xl font-bold text-red-800">Top Bowlers</h3>
+              </div>
+              <div className="space-y-3">
+                {bestBowlers.map((player, index) => (
+                  <div key={index} className={`bg-gradient-to-r ${player.color} rounded-lg p-4 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-3">
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg ${
+                          index === 0 ? 'bg-yellow-500 ring-4 ring-yellow-300' : 
+                          index === 1 ? 'bg-gray-400 ring-4 ring-gray-300' : 
+                          index === 2 ? 'bg-orange-500 ring-4 ring-orange-300' : 
+                          'bg-white bg-opacity-20'
+                        }`}>
+                          {index + 1}
+                        </div>
+                        <div className="text-2xl">{player.logo}</div>
+                        <div>
+                          <div className="font-bold text-lg">{player.name}</div>
+                          <div className="text-sm opacity-90">{player.team}</div>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-bold">{player.wickets}</div>
+                        <div className="text-sm opacity-90">Avg: {player.average}</div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Sponsorship Section */}
       <section className="py-16 bg-gradient-to-r from-blue-500 to-blue-500">
