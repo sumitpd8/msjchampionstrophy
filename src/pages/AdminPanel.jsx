@@ -370,7 +370,7 @@ const AdminPanel = () => {
       </div>
 
       {/* Tab Navigation */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="bg-white rounded-xl shadow-sm border border-green-100 mb-6">
           <div className="flex border-b border-gray-200">
             <button

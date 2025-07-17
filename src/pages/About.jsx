@@ -118,16 +118,16 @@ const About = () => {
         {/* Main Organizers */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Main Organizers</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
             {organizers.map((organizer, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-6">
                   <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center overflow-hidden">
                     {/* changes */}
                   <img src={organizer.img} alt={organizer.name} className="w-full h-full object-cover" />                
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">{organizer.name}</h3>
+                    <h3 className="font-bold text-gray-900">{organizer.name}</h3>
                     <p className="text-sm text-gray-600">{organizer.role}</p>
                   </div>
                 </div>
